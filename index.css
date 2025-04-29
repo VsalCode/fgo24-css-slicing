@@ -1,0 +1,471 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+/* --------------------------------------- UNIVERSAL STYLES */
+
+.btn-main{
+  height: 50px;
+  width: 225px;
+  font-size: 19px;
+  background-color: #2948FF;
+  color: white  ;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-primary{
+  height: 50px;
+  width: 225px;
+  font-size: 19px;
+  color: #2948FF;
+  font-weight: 500;
+  border: none;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.btn-secondary{
+  margin-left: 15px;
+  height: 50px;
+  width: 225px;
+  font-size: 19px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid white;
+}
+
+.btn-primary-small{
+  border-radius: 5px;
+  height: 48px;
+  width: 97px;
+  border: none;
+  color: #2948FF;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.btn-secondary-small{
+  background-color: transparent;  
+  font-weight: 500;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  height: 48px;
+  width: 97px;  
+
+}
+
+
+/* UNIVERSAL STYLES END */
+
+.wrapper{
+  background-color: white;
+  height: 500vh;
+}
+
+.container{
+  height: 679px;
+  background-color: #2948FF;
+}
+
+/* --------------------------------------- NAVBAR */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 76px;
+  margin: 0 130px;
+  padding: 50px 0;
+}
+
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo>img{
+  width: 40px;
+  height: 40px;
+}
+
+.logo>p{
+  font-weight: 600;
+  font-size: 25px;
+  color: white;
+}
+
+/* NAVBAR END */
+
+
+/*--------------------------------------- BANNER */
+
+.title{
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 60px;
+}
+
+.banner{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-left>img{
+  height: 422px;
+  width: 423px;
+  position: relative;
+  bottom: 0;
+}
+
+.banner-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: centexr;
+  }
+
+.banner-right>p{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.banner-right>div{
+  display: flex;
+}
+
+.banner-right>div>button>{
+  align-items: center;
+}
+
+.banner-right>div>button>img{
+  height: 20px;
+  width: 18px;
+}
+
+.users{
+  display: flex;
+  align-items: center;
+  margin: 30px 0 20px;
+}
+
+.users>img{
+  width: 120px;
+  height: 48px;
+  margin-left: 20px;
+}
+
+
+.user-number{
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+/* BANNER END */
+
+/*--------------------------------------- BENEFIT */
+
+.benefit{
+  display: flex;
+  height: 213px;
+  justify-content: space-around;
+  background-color: white;
+  margin: 0 100px;
+}
+
+.benefit>div{
+  display: flex;
+  align-items: center;
+  width: 350px;
+}
+
+.benefit>div>div>img{
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+}
+
+/* BENEFIT END */
+
+/*--------------------------------------- WELCOME TO E WALLET */
+
+.welcome{
+  display: flex;
+  margin: 0 100px;
+}
+
+.welcome-kanan>p:nth-child(1){
+  color: #2948FF;
+  font-weight: 800;
+}
+
+.welcome-kanan>p:nth-child(2){
+  color: black;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.welcome-kanan>p:nth-child(3){
+
+}
+
+
+.welcome-kanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.welcome>div>img{
+  height: 405px;
+  width: 680px ;
+}
+
+/* WELCOME TO E WALLET END */
+
+/*--------------------------------------- ZWALET */
+
+.zwalet{
+  display: flex;
+  height: 609px;
+  margin: 50px 0;
+  padding: 0 70px;
+  align-items: center;
+  background-color: #E8E8E84D;
+}
+
+.zwalet>.img{
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+.zwalet>.teks{
+  padding: 0 150px;
+}
+
+.zwalet>.teks>p:nth-child(1){
+  font-size: 33px;
+  font-weight: 600;
+}
+
+.zwalet>.teks>p:nth-child(2){
+  font-size: 18px;
+  padding: 30px 0;
+}
+
+.check-list>div{
+  display: flex;
+  align-items: center;
+  gap: 10px ;
+  margin-bottom: 30px;
+}
+
+.check-list>div>img{
+  width: 30px;
+  height: 30px;
+}
+
+.check-list>div>p{
+  font-weight: 700;
+  color: #00A700;
+  font-size: 18px;
+}
+
+.zwalet>div>img{
+  width: 453px;
+}
+
+/* ZWALET END */
+
+/*--------------------------------------- TRUSTED PARTENRS */
+
+/* partners */
+.trusted-partners>div:nth-child(1){
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 100px;
+  height: 258px;
+}
+
+.trusted-partners>div>div>P:nth-child(1){
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.trusted-partners>div>div>P:nth-child(2){
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.trusted-partners>div>div>img{
+width: 678PX;
+}
+
+/* testimoni */
+.trusted-partners>div:nth-child(2){
+  text-align: center;
+}
+
+.trusted-partners>div:nth-child(2)>p:nth-child(1){
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.trusted-partners>div:nth-child(2)>p:nth-child(2){
+  font-size: 16px;
+  font-weight: 400 ;
+  padding-top: 30px;
+}
+
+.trusted-partners>div:nth-child(2)>div{
+  display: flex;
+  justify-content: center;
+}
+
+.box{
+  width: 707px;
+  height: 380px;
+  background-color: #2948FF;
+  border-radius: 16px;
+  padding: 40px 20px ;
+  margin-top: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.box>img:nth-child(1){
+  width: 58px;
+  height: 58px;
+}
+
+.box>img:nth-child(3){
+  width: 165px;
+  height: 20px;
+}
+
+.box>img:nth-child(4){
+  width: 20px;
+  height: 15px;
+}
+
+
+.box>p:nth-child(2){
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* TRUSTED PARTENRS */
+
+/*--------------------------------------- DONWLOAD APP */
+
+.donwload-app{
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+  margin: 70px 0;
+  background-color: #E8E8E84D;
+  height: 497px;
+}
+
+.donwload-app>div>p:nth-child(1){
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.donwload-app>div>p:nth-child(2){
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+
+.donwload-app>div>div{
+  display: flex;
+  margin-top: 30px;
+}
+
+.donwload-app>div>img{
+  width: 422px;
+  height: 443px;
+}
+
+.donwload-app>div:nth-child(2){
+  padding: 0 50px;
+}
+
+.donwload-app>div>div>button:nth-child(1){
+  background-color: #2948FF;
+  color: white;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  gap: 10px;
+}
+
+.donwload-app>div>div>button:nth-child(1)>img{
+  height: 20px;
+  width: 18px
+}
+
+.donwload-app>div>div>button:nth-child(2){
+  background-color: transparent;
+  color: #2948FF;
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  gap: 10px;
+  border: 1.5px solid #2948FF;
+}
+
+.donwload-app>div>div>button:nth-child(2)>img{
+  height: 20px;
+  width: 18px
+  
+}
+
+/* DONWLOAD APP END */
+
+/*--------------------------------------- FOOTER */
+
+.footer{
+  background-color: #2948FF;
+  padding: 10px 100px;
+  height: 378px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* FOOTER END */
