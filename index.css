@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -7,29 +7,29 @@
 
 /* --------------------------------------- UNIVERSAL STYLES */
 
-.btn-main{
+.btn-main {
   height: 50px;
   width: 225px;
   font-size: 19px;
-  background-color: #2948FF;
-  color: white  ;
+  background-color: #2948ff;
+  color: white;
   font-weight: 500;
   border: none;
   border-radius: 6px;
 }
 
-.btn-primary{
+.btn-primary {
   height: 50px;
   width: 225px;
   font-size: 19px;
-  color: #2948FF;
+  color: #2948ff;
   font-weight: 500;
   border: none;
   background-color: white;
   border-radius: 6px;
 }
 
-.btn-secondary{
+.btn-secondary {
   margin-left: 15px;
   height: 50px;
   width: 225px;
@@ -42,43 +42,41 @@
   border: 1px solid white;
 }
 
-.btn-primary-small{
+.btn-primary-small {
   border-radius: 5px;
   height: 48px;
   width: 97px;
   border: none;
-  color: #2948FF;
+  color: #2948ff;
   font-weight: 500;
   margin-left: 10px;
 }
 
-.btn-secondary-small{
-  background-color: transparent;  
+.btn-secondary-small {
+  background-color: transparent;
   font-weight: 500;
   border: 1px solid white;
   color: white;
   border-radius: 5px;
   height: 48px;
-  width: 97px;  
-
+  width: 97px;
 }
-
 
 /* UNIVERSAL STYLES END */
 
-.wrapper{
+.wrapper {
   background-color: white;
   height: 500vh;
 }
 
-.container{
+.container {
   height: 679px;
-  background-color: #2948FF;
+  background-color: #2948ff;
 }
 
 /* --------------------------------------- NAVBAR */
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,20 +85,19 @@ nav{
   padding: 50px 0;
 }
 
-
-.logo{
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.logo>img{
+.logo > img {
   width: 40px;
   height: 40px;
 }
 
-.logo>p{
+.logo > p {
   font-weight: 600;
   font-size: 25px;
   color: white;
@@ -108,86 +105,83 @@ nav{
 
 /* NAVBAR END */
 
-
 /*--------------------------------------- BANNER */
 
-.title{
+.title {
   color: white;
   text-align: center;
   padding: 20px 0;
   font-size: 60px;
 }
 
-.banner{
+.banner {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.banner-left{
+.banner-left {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.banner-left>img{
+.banner-left > img {
   height: 422px;
   width: 423px;
   position: relative;
   bottom: 0;
 }
 
-.banner-right{
+.banner-right {
   display: flex;
   flex-direction: column;
   justify-content: centexr;
-  }
-
-.banner-right>p{
-    color: white;
-    font-size: 18px;
-    padding-bottom: 20px;
-    font-weight: 400;
 }
 
-.banner-right>div{
+.banner-right > p {
+  color: white;
+  font-size: 18px;
+  padding-bottom: 20px;
+  font-weight: 400;
+}
+
+.banner-right > div {
   display: flex;
 }
 
-.banner-right>div>button>{
+.banner-right > div > button > {
   align-items: center;
 }
 
-.banner-right>div>button>img{
+.banner-right > div > button > img {
   height: 20px;
   width: 18px;
 }
 
-.users{
+.users {
   display: flex;
   align-items: center;
   margin: 30px 0 20px;
 }
 
-.users>img{
+.users > img {
   width: 120px;
   height: 48px;
   margin-left: 20px;
 }
 
-
-.user-number{
+.user-number {
   color: white;
   font-size: 40px;
   font-weight: 700;
 }
 
-
 /* BANNER END */
 
 /*--------------------------------------- BENEFIT */
 
-.benefit{
+.benefit {
   display: flex;
   height: 213px;
   justify-content: space-around;
@@ -195,13 +189,13 @@ nav{
   margin: 0 100px;
 }
 
-.benefit>div{
+.benefit > div {
   display: flex;
   align-items: center;
   width: 350px;
 }
 
-.benefit>div>div>img{
+.benefit > div > div > img {
   width: 58px;
   height: 58px;
   margin-right: 20px;
@@ -211,92 +205,90 @@ nav{
 
 /*--------------------------------------- WELCOME TO E WALLET */
 
-.welcome{
+.welcome {
   display: flex;
   margin: 0 100px;
 }
 
-.welcome-kanan>p:nth-child(1){
-  color: #2948FF;
+.welcome-kanan > p:nth-child(1) {
+  color: #2948ff;
   font-weight: 800;
 }
 
-.welcome-kanan>p:nth-child(2){
+.welcome-kanan > p:nth-child(2) {
   color: black;
   font-weight: 600;
   font-size: 30px;
 }
 
-.welcome-kanan>p:nth-child(3){
-
+.welcome-kanan > p:nth-child(3) {
 }
 
-
-.welcome-kanan{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding-right: 50px;
+.welcome-kanan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-right: 50px;
 }
 
-.welcome>div>img{
+.welcome > div > img {
   height: 405px;
-  width: 680px ;
+  width: 680px;
 }
 
 /* WELCOME TO E WALLET END */
 
 /*--------------------------------------- ZWALET */
 
-.zwalet{
+.zwalet {
   display: flex;
   height: 609px;
   margin: 50px 0;
   padding: 0 70px;
   align-items: center;
-  background-color: #E8E8E84D;
+  background-color: #e8e8e84d;
 }
 
-.zwalet>.img{
+.zwalet > .img {
   display: flex;
   justify-content: center;
-  align-items: center ;
+  align-items: center;
 }
 
-.zwalet>.teks{
+.zwalet > .teks {
   padding: 0 150px;
 }
 
-.zwalet>.teks>p:nth-child(1){
+.zwalet > .teks > p:nth-child(1) {
   font-size: 33px;
   font-weight: 600;
 }
 
-.zwalet>.teks>p:nth-child(2){
+.zwalet > .teks > p:nth-child(2) {
   font-size: 18px;
   padding: 30px 0;
 }
 
-.check-list>div{
+.check-list > div {
   display: flex;
   align-items: center;
-  gap: 10px ;
+  gap: 10px;
   margin-bottom: 30px;
 }
 
-.check-list>div>img{
+.check-list > div > img {
   width: 30px;
   height: 30px;
 }
 
-.check-list>div>p{
+.check-list > div > p {
   font-weight: 700;
-  color: #00A700;
+  color: #00a700;
   font-size: 18px;
 }
 
-.zwalet>div>img{
+.zwalet > div > img {
   width: 453px;
 }
 
@@ -305,7 +297,7 @@ nav{
 /*--------------------------------------- TRUSTED PARTENRS */
 
 /* partners */
-.trusted-partners>div:nth-child(1){
+.trusted-partners > div:nth-child(1) {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -313,47 +305,47 @@ nav{
   height: 258px;
 }
 
-.trusted-partners>div>div>P:nth-child(1){
+.trusted-partners > div > div > P:nth-child(1) {
   font-size: 36px;
   font-weight: 500;
 }
 
-.trusted-partners>div>div>P:nth-child(2){
+.trusted-partners > div > div > P:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
 }
 
-.trusted-partners>div>div>img{
-width: 678PX;
+.trusted-partners > div > div > img {
+  width: 678px;
 }
 
 /* testimoni */
-.trusted-partners>div:nth-child(2){
+.trusted-partners > div:nth-child(2) {
   text-align: center;
 }
 
-.trusted-partners>div:nth-child(2)>p:nth-child(1){
+.trusted-partners > div:nth-child(2) > p:nth-child(1) {
   font-size: 36px;
   font-weight: 500;
 }
 
-.trusted-partners>div:nth-child(2)>p:nth-child(2){
+.trusted-partners > div:nth-child(2) > p:nth-child(2) {
   font-size: 16px;
-  font-weight: 400 ;
+  font-weight: 400;
   padding-top: 30px;
 }
 
-.trusted-partners>div:nth-child(2)>div{
+.trusted-partners > div:nth-child(2) > div {
   display: flex;
   justify-content: center;
 }
 
-.box{
+.box {
   width: 707px;
   height: 380px;
-  background-color: #2948FF;
+  background-color: #2948ff;
   border-radius: 16px;
-  padding: 40px 20px ;
+  padding: 40px 20px;
   margin-top: 50px;
   color: white;
   display: flex;
@@ -363,23 +355,22 @@ width: 678PX;
   gap: 15px;
 }
 
-.box>img:nth-child(1){
+.box > img:nth-child(1) {
   width: 58px;
   height: 58px;
 }
 
-.box>img:nth-child(3){
+.box > img:nth-child(3) {
   width: 165px;
   height: 20px;
 }
 
-.box>img:nth-child(4){
+.box > img:nth-child(4) {
   width: 20px;
   height: 15px;
 }
 
-
-.box>p:nth-child(2){
+.box > p:nth-child(2) {
   font-size: 18px;
   font-weight: 700;
 }
@@ -388,76 +379,75 @@ width: 678PX;
 
 /*--------------------------------------- DONWLOAD APP */
 
-.donwload-app{
+.donwload-app {
   display: flex;
   align-items: center;
   padding: 0 100px;
   margin: 70px 0;
-  background-color: #E8E8E84D;
+  background-color: #e8e8e84d;
   height: 497px;
 }
 
-.donwload-app>div>p:nth-child(1){
+.donwload-app > div > p:nth-child(1) {
   font-size: 36px;
   font-weight: 500;
 }
 
-.donwload-app>div>p:nth-child(2){
+.donwload-app > div > p:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
   margin-top: 30px;
 }
 
-.donwload-app>div>div{
+.donwload-app > div > div {
   display: flex;
   margin-top: 30px;
 }
 
-.donwload-app>div>img{
+.donwload-app > div > img {
   width: 422px;
   height: 443px;
 }
 
-.donwload-app>div:nth-child(2){
+.donwload-app > div:nth-child(2) {
   padding: 0 50px;
 }
 
-.donwload-app>div>div>button:nth-child(1){
-  background-color: #2948FF;
+.donwload-app > div > div > button:nth-child(1) {
+  background-color: #2948ff;
   color: white;
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: center;
   gap: 10px;
 }
 
-.donwload-app>div>div>button:nth-child(1)>img{
+.donwload-app > div > div > button:nth-child(1) > img {
   height: 20px;
-  width: 18px
+  width: 18px;
 }
 
-.donwload-app>div>div>button:nth-child(2){
+.donwload-app > div > div > button:nth-child(2) {
   background-color: transparent;
-  color: #2948FF;
+  color: #2948ff;
   display: flex;
-  align-items: center ;
+  align-items: center;
   justify-content: center;
   gap: 10px;
-  border: 1.5px solid #2948FF;
+  border: 1.5px solid #2948ff;
 }
 
-.donwload-app>div>div>button:nth-child(2)>img{
+.donwload-app > div > div > button:nth-child(2) > img {
   height: 20px;
-  width: 18px
-  
+  width: 18px;
 }
 
 /* DONWLOAD APP END */
 
 /*--------------------------------------- FOOTER */
 
-.footer{
-  background-color: #2948FF;
+.footer {
+  background-color: #2948ff;
   padding: 10px 100px;
   height: 378px;
   display: flex;
@@ -466,6 +456,187 @@ width: 678PX;
   align-items: center;
 }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding-bottom: 50px;
+}
 
+.footer-grid > div {
+  /* border: 2px sol  id white; */
+  height: 200px;
+  width: 264px;
+}
+
+/* E-WALLET */
+.footer-grid > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+}
+
+.footer-grid > div:nth-child(1) > div > img {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-grid > div:nth-child(1) > div > span {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: white;
+}
+
+.footer-grid > div:nth-child(1) > div > p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0px;
+  color: white;
+}
+
+/* GET IN TOUCH */
+.footer-grid > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-grid > div:nth-child(2) > p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
+  padding-bottom: 35px;
+}
+
+.footer-grid > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-grid > div:nth-child(2) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-grid > div:nth-child(2) > div > div > span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  color: white;
+}
+
+.footer-grid > div:nth-child(2) > div > div > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* SOCIAL MEDIA */
+.footer-grid > div:nth-child(3){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.footer-grid > div:nth-child(3) > p {
+  font-family: Montserrat;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: white;
+}
+
+.footer-grid > div:nth-child(3) > div > img {
+  width: 222px;
+  height: 42px;
+}
+
+/* NEWSLETTER */
+.footer-grid > div:nth-child(4){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-grid > div:nth-child(4)>p{
+  font-family: Montserrat;
+font-weight: 600;
+font-size: 18px;
+line-height: 18px;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-align: center;
+color: white;
+padding-bottom: 30px;
+}
+
+.footer-grid > div:nth-child(4)>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-grid > div:nth-child(4)>div>input{
+  width: 275px;
+height: 44px;
+gap: 10px;
+border-width: 1px;
+border-radius: 8px;
+padding-top: 14px;
+padding-right: 13px;
+padding-bottom: 14px;
+padding-left: 13px;
+border: none;
+}
+
+.footer-grid > div:nth-child(4)>div>button{
+  width: 275px;
+height: 36px;
+top: 3643px;
+left: 1028px;
+gap: 10px;
+border-radius: 6px;
+padding: 10px;
+background-color: #FFFFFF;
+color: #2948ff;
+border: none;
+font-family: Montserrat;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+/* COPYRIGHT */
+  .copyright>p{
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: white;
+  }
 
 /* FOOTER END */
