@@ -42,26 +42,6 @@
   border: 1px solid white;
 }
 
-.btn-primary-small {
-  border-radius: 5px;
-  height: 48px;
-  width: 97px;
-  border: none;
-  color: #2948ff;
-  font-weight: 500;
-  margin-left: 10px;
-}
-
-.btn-secondary-small {
-  background-color: transparent;
-  font-weight: 500;
-  border: 1px solid white;
-  color: white;
-  border-radius: 5px;
-  height: 48px;
-  width: 97px;
-}
-
 /* UNIVERSAL STYLES END */
 
 .wrapper {
@@ -101,6 +81,42 @@ nav {
   font-weight: 600;
   font-size: 25px;
   color: white;
+}
+
+
+.btn-navbar-border {
+  width: 86px;
+  height: 48px;
+  text-decoration: none;
+  gap: 6px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  margin-right: 20px;
+}
+
+.btn-navbar-white {
+  width: 97px;
+  height: 48px;
+  gap: 6px;
+  text-decoration: none;
+    border-radius: 5px;
+  padding-top: 12px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+  padding-left: 18px;
+  background-color: white;
+  color: #2948ff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.75px;
+  text-align: center;
 }
 
 /* NAVBAR END */
@@ -546,7 +562,7 @@ nav {
 }
 
 /* SOCIAL MEDIA */
-.footer-grid > div:nth-child(3){
+.footer-grid > div:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -556,12 +572,12 @@ nav {
 
 .footer-grid > div:nth-child(3) > p {
   font-family: Montserrat;
-font-weight: 600;
-font-size: 18px;
-line-height: 18px;
-letter-spacing: 1px;
-text-transform: uppercase;
-color: white;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: white;
 }
 
 .footer-grid > div:nth-child(3) > div > img {
@@ -570,25 +586,25 @@ color: white;
 }
 
 /* NEWSLETTER */
-.footer-grid > div:nth-child(4){
+.footer-grid > div:nth-child(4) {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.footer-grid > div:nth-child(4)>p{
+.footer-grid > div:nth-child(4) > p {
   font-family: Montserrat;
-font-weight: 600;
-font-size: 18px;
-line-height: 18px;
-letter-spacing: 1px;
-text-transform: uppercase;
-text-align: center;
-color: white;
-padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
 }
 
-.footer-grid > div:nth-child(4)>div{
+.footer-grid > div:nth-child(4) > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -596,47 +612,47 @@ padding-bottom: 30px;
   gap: 20px;
 }
 
-.footer-grid > div:nth-child(4)>div>input{
+.footer-grid > div:nth-child(4) > div > input {
   width: 275px;
-height: 44px;
-gap: 10px;
-border-width: 1px;
-border-radius: 8px;
-padding-top: 14px;
-padding-right: 13px;
-padding-bottom: 14px;
-padding-left: 13px;
-border: none;
+  height: 44px;
+  gap: 10px;
+  border-width: 1px;
+  border-radius: 8px;
+  padding-top: 14px;
+  padding-right: 13px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+  border: none;
 }
 
-.footer-grid > div:nth-child(4)>div>button{
+.footer-grid > div:nth-child(4) > div > button {
   width: 275px;
-height: 36px;
-top: 3643px;
-left: 1028px;
-gap: 10px;
-border-radius: 6px;
-padding: 10px;
-background-color: #FFFFFF;
-color: #2948ff;
-border: none;
-font-family: Montserrat;
-font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-letter-spacing: 0%;
-text-align: center;
+  height: 36px;
+  top: 3643px;
+  left: 1028px;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #2948ff;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
 /* COPYRIGHT */
-  .copyright>p{
-    font-family: Montserrat;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0px;
-    text-align: center;
-    color: white;
-  }
+.copyright > p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
 
 /* FOOTER END */

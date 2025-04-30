@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #2948ff;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.register {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 70px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.register > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 7px;
+}
+
+.register > div:nth-child(1) > span {
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #2948ff;
+}
+
+.register > div:nth-child(1) > img {
+  width: 32px;
+  height: 32px;
+}
+
+.register > div:nth-child(2) > div:nth-child(1) > p {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.register > div:nth-child(2) > div:nth-child(2) > p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 166%;
+  letter-spacing: 0%;
+  padding-top: 20px;
+}
+
+.register > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.register > div:nth-child(3) > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 562px;
+  height: 40px;
+  gap: 10px;
+  border: 1px solid #e8e8e8;
+  color: black;
+  border-radius: 100px;
+  padding: 10px;
+  text-decoration: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.5%;
+  text-align: center;
+}
+
+.register > div:nth-child(3) > a > img {
+  width: 20px;
+  height: 20px;
+}
+
+.register > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+}
+
+.register > div:nth-child(4) > form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.register > div:nth-child(4) > form > div > label {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  padding: 10px 0;
+}
+
+.register > div:nth-child(4) > form > div > input {
+  width: 562px;
+  height: 40px;
+  border: 1px solid #dedede;
+  gap: 10px;
+  border-radius: 8px;
+  padding-top: 14px;
+  padding-right: 13px;
+  padding-bottom: 14px;
+  padding-left: 13px;
+}
+
+.register > div:nth-child(4) > form > button {
+  width: 562px;
+  height: 40px;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 10px;
+  background-color: #2948ff;
+  color: white;
+  border: none;
+  margin-top: 15px;
+}
+
+.register > div:nth-child(4) > p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.register > div:nth-child(4) > p > a {
+  text-decoration: none;
+}
+
+.ilustrasi {
+  background-color: #2948ff;
+}
+
+.ilustrasi > div > img {
+  width: 630px;
+  height: 521px;
+}
