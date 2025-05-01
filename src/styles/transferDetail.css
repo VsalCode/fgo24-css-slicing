@@ -188,37 +188,117 @@ nav > span:nth-child(2) > img:nth-child(3) {
   top: 206px;
   left: 300px;
   border: 2px solid #e8e8e8;
-}
-
-.find-people > div:nth-child(1) {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 30px;
 }
 
-.find-people > div:nth-child(1) > div > p:nth-child(1) {
+.find-people p {
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: -0.6%;
   vertical-align: middle;
 }
 
-.find-people > div:nth-child(1) > div > p:nth-child(2) {
+.find-people > div:nth-child(2) {
+  width: 994px;
+  height: 115px;
+  border-radius: 8px;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAMA, FOTO USER, VERIFIED */
+.find-people > div:nth-child(2) > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.find-people > div:nth-child(2) > span > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.find-people > div:nth-child(2) > span > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.find-people > div:nth-child(2) > span > div > p:nth-child(1) {
   font-family: Montserrat;
-  font-weight: 500;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 0%;
 }
 
-.find-people > div:nth-child(1) > span {
-  width: 340px;
-  height: 40px;
-  top: 230px;
-  left: 994px;
+.find-people > div:nth-child(2) > span > div > p:nth-child(2) {
+  font-family: Plus Jakarta Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #4f5665;
+}
+
+.find-people > div:nth-child(2) > span > div > div {
+  width: 97px;
+  height: 22px;
+  border-radius: 6px;
+  gap: 8px;
+  border-left-width: 4px;
+  padding: 4px 12px 4px 8px;
+  background-color: #2948ff;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-people > div:nth-child(2) > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* AMOUNT */
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.find-people > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.find-people > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 20px 0;
+}
+
+.amount > div {
+  width: 994px;
+  height: 62px;
   border-radius: 6px;
   gap: 10px;
   padding: 10px;
@@ -226,48 +306,52 @@ nav > span:nth-child(2) > img:nth-child(3) {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
 }
 
-.find-people > div:nth-child(1) > span > input {
+.amount > div > input {
+  width: 994px;
+  height: 59px;
   border: none;
-  width: 340px;
-  height: 35px;
 }
 
-.find-people > div:nth-child(1) > span > img {
+.amount > div > img {
   width: 16px;
   height: 16px;
 }
 
-.find-people > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.notes > textarea {
+  width: 994px;
+  /* height: 223px; */
+  border-radius: 6px;
+  gap: 10px;
+  padding: 10px;
+  color: #4f5665;
+  border: 2px solid #e8e8e8;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
-.find-people > div:nth-child(2) > div {
-  height: 72px;
-  width: 1003px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 30px;
-}
-
-.find-people > div:nth-child(2) > div:nth-child(odd){
-  background-color: #e8e8e8;
-}
-
-.find-people > div:nth-child(2) > div:nth-child(even){
-  background-color: white;
-}
-
-.find-people > div:nth-child(2) > div >  img:nth-child(1) {
-    width: 48px;
-    height: 48px;
-}
-
-.find-people > div:nth-child(2) > div >  img:nth-child(4) {
-  width: 24px;
-  height: 24px;
+.find-people > button {
+  width: 994px;
+  height: 45px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 6px;
+  gap: 8px;
+  padding: 4px 12px 4px 8px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: center;
+  background-color: #2948ff;
+  color: white;
 }
