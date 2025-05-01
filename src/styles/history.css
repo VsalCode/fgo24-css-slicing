@@ -109,7 +109,7 @@ nav > span:nth-child(2) > img:nth-child(3) {
   padding-left: 20px;
 }
 
-.sidebar > div > a:nth-child(2) {
+.sidebar > div > a:nth-child(3) {
   background-color: #2948ff;
   color: white;
   border-radius: 6px;
@@ -175,11 +175,6 @@ nav > span:nth-child(2) > img:nth-child(3) {
   height: 24px;
 }
 
-.guide > a > img {
-  width: 609px;
-  height: 45px;
-}
-
 /* FIND PEOPLE */
 
 .find-people {
@@ -188,175 +183,116 @@ nav > span:nth-child(2) > img:nth-child(3) {
   top: 206px;
   left: 300px;
   border: 2px solid #e8e8e8;
+}
+
+.find-people > div:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px;
 }
 
-.find-people p {
+.find-people > div:nth-child(1) > p {
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 24px;
   letter-spacing: -0.6%;
   vertical-align: middle;
 }
 
-.find-people > div:nth-child(2) {
-  width: 994px;
-  height: 115px;
-  border-radius: 8px;
-  gap: 10px;
-  padding: 10px 20px;
-  background-color: #e8e8e8;
-  margin: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* NAMA, FOTO USER, VERIFIED */
-.find-people > div:nth-child(2) > span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.find-people > div:nth-child(2) > span > img {
-  width: 80px;
-  height: 80px;
-  border-radius: 4px;
-}
-
-.find-people > div:nth-child(2) > span > div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.find-people > div:nth-child(2) > span > div > p:nth-child(1) {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
-}
-
-.find-people > div:nth-child(2) > span > div > p:nth-child(2) {
-  font-family: Plus Jakarta Sans;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  color: #4f5665;
-}
-
-.find-people > div:nth-child(2) > span > div > div {
-  width: 97px;
-  height: 25px;
+.find-people > div:nth-child(1) > span {
+  width: 340px;
+  height: 40px;
+  top: 230px;
+  left: 994px;
   border-radius: 6px;
-  gap: 8px;
-  border-left-width: 4px;
-  padding: 4px 12px 4px 8px;
-  background-color: #2948ff;
-  color: white;
-  font-size: 14px;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid #e8e8e8;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.find-people > div:nth-child(2) > span > div > div > img{
+.find-people > div:nth-child(1) > span > input {
+  border: none;
+  width: 340px;
+  height: 35px;
+}
+
+.find-people > div:nth-child(1) > span > img {
   width: 16px;
   height: 16px;
 }
 
-.find-people > div:nth-child(2) > img {
+.find-people > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-people > div:nth-child(2) > div {
+  height: 72px;
+  width: 1003px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.find-people > div:nth-child(2) > div:nth-child(odd) {
+  background-color: #e8e8e8;
+}
+
+.find-people > div:nth-child(2) > div:nth-child(even) {
+  background-color: white;
+}
+
+.find-people > div:nth-child(2) > div > img:nth-child(1) {
+  width: 48px;
+  height: 48px;
+}
+
+.find-people > div:nth-child(2) > div > img:nth-child(5) {
   width: 24px;
   height: 24px;
 }
 
-/* AMOUNT */
-
-.amount {
-  display: flex;
-  flex-direction: column;
+.green {
+  color: #1ec15f;
 }
 
-.find-people > div > p:nth-child(1) {
-  font-family: Montserrat;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-  vertical-align: middle;
-  margin-top: 15px;
+.red {
+  color: #d00000;
 }
 
-.find-people > div > p:nth-child(2) {
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  padding: 20px 0;
-}
-
-.amount > div {
-  width: 994px;
-  height: 62px;
-  border-radius: 6px;
-  gap: 10px;
-  padding: 10px;
-  border: 2px solid #e8e8e8;
+/* PAGES */
+.pages{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Montserrat;
+  margin-top: 15px;
+}
+
+.pages > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  width: 1003px;
+}
+
+.pages > div > span {
+  font-family: Inter;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   letter-spacing: 0%;
 }
 
-.amount > div > input {
-  width: 994px;
-  height: 59px;
-  border: none;
-}
-
-.amount > div > img {
-  width: 16px;
-  height: 16px;
-}
-
-.notes > textarea {
-  width: 994px;
-  /* height: 223px; */
-  border-radius: 6px;
-  gap: 10px;
-  padding: 10px;
-  color: #4f5665;
-  border: 2px solid #e8e8e8;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-.find-people > button {
-  width: 994px;
-  height: 45px;
-  border: none;
-  margin-top: 15px;
-  border-radius: 6px;
-  gap: 8px;
-  padding: 4px 12px 4px 8px;
-  font-family: Montserrat;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-  text-align: center;
-  background-color: #2948ff;
-  color: white;
+.pages > div > img {
+  width: 335px;
+  height: 18px;
+  gap: 20px;
 }
