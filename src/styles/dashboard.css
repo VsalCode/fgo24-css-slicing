@@ -80,12 +80,11 @@ nav > span:nth-child(2) > img:nth-child(3) {
 /* SIDEBAR */
 
 .sidebar {
+  /* background-color: #2948ff; */
   background-color: #fff;
-  border-style: solid;
-  border-color: #e8e8e8;
-  border-width: 0 0 1px 0;
+  border: 1px solid #e8e8e8;
   width: 262px;
-  height: 948px;
+  height: 70vh;
   top: 76px;
   left: -1px;
   padding: 24px 42px;
@@ -142,7 +141,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
   height: 948px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  padding-top: 20px;
   gap: 20px;
 }
 
