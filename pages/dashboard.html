@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../src/styles/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <span class="logo">
+          <img src="../src/assets/logo.png" alt="" />
+          <p>E-Wallet</p>
+        </span>
+        <span>
+          <span>Ghaluh Wizard</span>
+          <img src="../src/icon/user-dashboard.png" alt="" />
+          <img src="../src/icon/dropdown.png" alt="" />
+        </span>
+      </nav>
+      <div>
+        <div class="sidebar">
+          <div>
+            <a href="./dashboard.html"><img src="../src/icon/dashboard.png" alt="" />Dashboard</a>
+            <a href=""><img src="../src/icon/transfer.png" alt="" />Transfer</a>
+            <a href=""><img src="../src/icon/history.png" alt="" />History</a>
+            <a href=""><img src="../src/icon/topup.png" alt="" />Top Up</a>
+            <a href=""><img src="../src/icon/profile.png" alt="" />Profile</a>
+            <a href=""><img src="../src/icon/keluar.png" alt="" />Keluar</a>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div>
+            <!-- balance, income, expense -->
+            <div>
+              <div>
+                <div>
+                  <img src="../src/icon/balance.png" alt="" />
+                  <span>Balance</span>
+                </div>
+                <p>Rp.120.000</p>
+                <p>+2% 3 Days Ago</p>
+              </div>
+              <div>
+                <div>
+                  <img src="../src/icon/income.png" alt="" />
+                  <span>Income</span>
+                </div>
+                <p>Rp.2.120.000</p>
+                <p>+11.01%</p>
+              </div>
+              <div>
+                <div>
+                  <img src="../src/icon/expense.png" alt="" />
+                  <span>Expense</span>
+                </div>
+                <p>Rp.200.000</p>
+                <p>-5.06%</p>
+              </div>
+            </div>
+            <!-- fast service -->
+            <div>
+              <span class="title">Fast Service</span>
+              <span>
+                <button><img src="../src/icon/topup-white.png" alt="" />Top Up</button>
+                <button><img src="../src/icon/transfer-white.png" alt="" />Transfer</button>
+              </span>
+            </div>
+            <!-- income chart -->
+            <div class="income-chart">
+              <div>
+                <span class="title">Income Chart</span>
+                <span>
+                  <button>7 Days<img src="../src/icon/dropdown.png" alt="" /></button>
+                  <button>Income<img src="../src/icon/dropdown.png" alt="" /></button>
+                </span>
+              </div>
+              <div>
+                <img src="../src/assets/chart.png" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- TRANSACTION -->
+          <div class="transaction">
+            <div>
+              <p>Transaction History</p>
+              <p>See All</p>
+            </div>
+            <div class="users">
+              <div >
+                <img src="../src/users/robert-fox.png" alt="">
+                <div>
+                  <p>Robert Fox</p>
+                  <p>Transfer</p>  
+                </div>
+                <p class="transfer">+Rp.50.000</p>
+              </div>
+              <div >
+                <img src="../src/users/raulemons.png" alt="">
+                <div>
+                  <p>raulemons</p>
+                  <p>send</p>  
+                </div>
+                <p class="send">+Rp.200.000</p>
+              </div>
+              <div >
+                <img src="../src/users/reiva.png" alt="">
+                <div>
+                  <p>Reiva</p>
+                  <p>Transfer</p>  
+                </div>
+                <p class="transfer">+Rp.1.000.000</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

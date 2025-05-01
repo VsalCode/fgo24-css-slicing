@@ -1,0 +1,457 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+}
+
+.container > div {
+  display: flex;
+}
+
+/* NAVBAR */
+nav {
+  width: 100%;
+  height: 76px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 0 0 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 79px 0 44px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo > img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo > p {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #2948ff;
+}
+
+nav > span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav > span:nth-child(2) > span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+nav > span:nth-child(2) > img:nth-child(2) {
+  width: 48px;
+  height: 48px;
+}
+
+nav > span:nth-child(2) > img:nth-child(3) {
+  width: 18px;
+  height: 10px;
+  border-width: 2px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background-color: #fff;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 0 0 1px 0;
+  width: 262px;
+  height: 948px;
+  top: 76px;
+  left: -1px;
+  padding: 24px 42px;
+  gap: 15px;
+  position: sticky;
+  left: 0;
+  z-index: 20;
+}
+
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar > div > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.sidebar > div > a:nth-child(1) {
+  background-color: #2948ff;
+  color: white;
+  border-radius: 6px;
+}
+
+.sidebar > div > a {
+  width: 208px;
+  height: 45px;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #4f5665;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.sidebar > div > a > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* DASHBOARD UTAMA */
+
+.dashboard {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  height: 948px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* INFORMATION */
+
+.dashboard > div:nth-child(1) {
+  /* background-color: darkblue; */
+  position: relative;
+  width: 700px;
+  height: 843px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) {
+  width: 700px;
+  height: 147px;
+  top: 285px;
+  left: 300px;
+  border-radius: 6px;
+  border-width: 1px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* BALANCE, INCOME, EXPENSE */
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div {
+  width: 222px;
+  height: 147pxx;
+  top: 120px;
+  left: 778px;
+  border-radius: 6px;
+  border: 2px solid #e8e8e8;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div > div > span {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  color: #4f5665;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div > div > img {
+  width: 22px;
+  height: 20px;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(3) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  color: #00a700;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(3) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0%;
+  text-align: right;
+  vertical-align: middle;
+  color: #d00000;
+}
+
+/* FAST SERVICE */
+
+.dashboard > div:nth-child(1) > div:nth-child(2) {
+  border: 2px solid #e8e8e8;
+  width: 700px;
+  height: 81px;
+  top: 285px;
+  left: 300px;
+  border-radius: 6px;
+  border-width: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  align-items: center;
+}
+
+.title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(2) > span > button {
+  width: 109px;
+  height: 45px;
+  padding: 4px 12px 4px 8px;
+  gap: 8px;
+  border-radius: 6px;
+  background-color: #2948ff;
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard > div:nth-child(1) > div:nth-child(2) > span > button > img {
+  width: 22px;
+  height: 19px;
+}
+
+/* INCOME CHART */
+
+.income-chart {
+  border: 2px solid #e8e8e8;
+  width: 700px;
+  height: 574px;
+  border-width: 1px;
+  position: relative;
+  z-index: 20;
+  padding: 20px 25px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 30px;
+}
+
+.income-chart > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.income-chart > div > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.income-chart > div > span:nth-child(2) {
+  gap: 20px;
+}
+
+.income-chart > div > span > button {
+  width: 113px;
+  height: 35px;
+  gap: 10px;
+  border-radius: 6px;
+  padding: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.income-chart > div > span > button > img {
+  width: 7.999999523162842;
+  height: 4;
+  top: 6px;
+  left: 4.33px;
+  border-width: 2px;
+}
+
+.income-chart > div > img {
+  width: 668px;
+  height: 472px;
+}
+
+/* TRANSACTION */
+
+.transaction {
+  border: 2px solid #e8e8e8;
+  width: 341px;
+  height: 843px;
+  top: 120px;
+  left: 1020px;
+  border-radius: 6px;
+  border-width: 1px;
+  padding: 20px;
+}
+
+.transaction > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+.transaction > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  color: #2948ff;
+}
+
+.users {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.users > div {
+  width: 298px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.users > div > img {
+  width: 56px;
+  height: 56px;
+  top: 190px;
+  left: 1038px;
+  border-radius: 10px;
+}
+
+.users > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.users > div > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.users > div > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.users > div > .transfer {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #00a700;
+}
+
+.users > div > .send {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #d00000;
+}
