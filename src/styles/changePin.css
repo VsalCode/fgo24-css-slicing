@@ -1,0 +1,259 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.container {
+  height: 100%;
+}
+
+.container > div {
+  display: flex;
+}
+
+/* NAVBAR */
+nav {
+  width: 100%;
+  height: 76px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 0 0 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 79px 0 44px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo > img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo > p {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #2948ff;
+}
+
+nav > span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav > span:nth-child(2) > span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+nav > span:nth-child(2) > img:nth-child(2) {
+  width: 48px;
+  height: 48px;
+}
+
+nav > span:nth-child(2) > img:nth-child(3) {
+  width: 18px;
+  height: 10px;
+  border-width: 2px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  /* background-color: #2948ff; */
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 262px;
+  height: 70vh;
+  top: 76px;
+  left: -1px;
+  padding: 24px 42px;
+  gap: 15px;
+  position: sticky;
+  left: 0;
+  z-index: 20;
+}
+
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar > div > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.sidebar > div > a:nth-child(5) {
+  background-color: #2948ff;
+  color: white;
+  border-radius: 6px;
+}
+
+.sidebar > div > a {
+  width: 208px;
+  height: 45px;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #4f5665;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.sidebar > div > a > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* DASHBOARD UTAMA */
+
+.dashboard {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  height: 948px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 30px;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ISI */
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 1061px;
+}
+
+.guide > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.guide > span > span {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+/* CHANGE PASSWORD */
+
+.change-password {
+  width: 1061px;
+  max-width: 100%;
+  height: 404px;
+  top: 206px;
+  left: 300px;
+  border: 2px solid #e8e8e8;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.change-password > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+.change-password > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4f5665;
+  padding-top: 10px;
+}
+
+.change-password > form > div {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.change-password > form > div > input {
+  width: 66px;
+  height: 66px;
+  border: none;
+  /* border: 2px solid #e8e8e8; */
+  border-bottom: 2px solid #e8e8e8;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.change-password > form > div > input:focus {
+  border-bottom: 2px solid #2948ff;
+  outline: none;
+}
+
+.change-password > form > button {
+  width: 100%;
+  height: 45px;
+  gap: 8px;
+  border-left-width: 4px;
+  padding: 4px 12px 4px 8px;
+  border-radius: 6px;
+  background-color: #2948ff;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.change-password > form > button:hover {
+  opacity: 90%;
+}
