@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer</title>
+    <link rel="stylesheet" href="../src/styles/topUp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <span class="logo">
+          <img src="../src/assets/logo.png" alt="" />
+          <p>E-Wallet</p>
+        </span>
+        <span>
+          <span>Ghaluh Wizard</span>
+          <img src="../src/icon/user-dashboard.png" alt="" />
+          <img src="../src/icon/dropdown.png" alt="" />
+        </span>
+      </nav>
+      <div>
+        <div class="sidebar">
+
+          <div>
+            <a href="./dashboard.html"><img src="../src/icon/dashboard.png  " alt="" />Dashboard</a>
+            <a href="./transfer.html"><img src="../src/icoN/transfer.png" alt="" />Transfer</a>
+            <a href="./history.html"><img src="../src/icon/history.png" alt="" />History</a>
+            <a href="./topUp.html"><img src="../src/icon/topup-white.png" alt="" />Top Up</a>
+            <a href=""><img src="../src/icon/profile.png" alt="" />Profile</a>
+            <a href=""><img src="../src/icon/keluar.png" alt="" />Keluar</a>
+          </div>
+        </div>
+
+        <div class="dashboard">
+
+          <div class="guide">
+            <span>
+              <img src="../src/icon/topup-blue.png" alt="" />
+              Top Up Account
+            </span>
+          </div>
+          
+          <div>
+            <div class="account-information">
+              <p>Account Information</p>
+              <!-- Account Information -->
+              <div>
+                <span>
+                  <img src="../src/users/wizard.png" alt="" />
+                  <div>
+                    <p>Ghaluh Wizard</p>
+                    <p>(239) 555-0108</p>
+                    <div><img src="../src/icon/verified.png" alt="" />Verified</div>
+                  </div>
+                </span>
+              </div>
+
+              <!-- amount -->
+              <div>
+                <p>Amount</p>
+                <p>Type the amount you want to transfer and then press continue to the next steps.</p>
+                <div>
+                  <img src="../src/icon/money.png" alt="" />
+                  <input type="text" placeholder="Enter Nominal Transfer" />
+                </div>
+              </div>
+              <div>
+                <p>Payment Method</p>
+                <p>Choose your payment method for top up account</p>
+                <div class="bri">
+                  <input type="radio" id="bri" name="bank" value="bri" checked />
+                  <img src="../src/assets/BRI.png" alt="" />
+                  <label for="bri">Bank Rakyat Indonesia</label>
+                </div>
+                <div class="dana">
+                  <input type="radio" id="dana" name="bank" value="dana" />
+                  <img src="../src/assets/Dana.png" alt="" />
+                  <label for="dana">Dana</label>
+                </div>
+                <div class="bca">
+                  <input type="radio" id="bca" name="bank" value="bca" />
+                  <img src="../src/assets/BCA.png" alt="" />
+                  <label for="bca">Bank Central Asia</label>
+                </div>
+                <div class="gopay">
+                  <input type="radio" id="gopay" name="bank" value="gopay" />
+                  <img src="../src/assets/Gopay.png" alt="" />
+                  <label for="gopay">Gopay</label>
+                </div>
+                <div class="ovo">
+                  <input type="radio" id="ovo" name="bank" value="ovo" />
+                  <img src="../src/assets/OVO.png" alt="" />
+                  <label for="ovo">OVO</label>
+                </div>
+              </div>
+            </div>
+            <div class="payment">
+              <p>Payment</p>
+              <div>
+                <span>Order</span>
+                <span>Idr. 40.000</span>
+              </div>
+              <div>
+                <span>Delivery</span>
+                <span>Idr. 0</span>
+              </div>
+              <div>
+                <span>Tax</span>
+                <span>Idr. 4000</span>
+              </div>
+              <hr />
+              <div>
+                <span>Sub Total</span>
+                <span>Idr.44.000</span>
+              </div>
+              <button>Submit</button>
+              <p></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+</html>
