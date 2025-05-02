@@ -5,6 +5,17 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  scale: 120%;
+}
+
+
 .container {
   height: 100%;
 }
@@ -232,6 +243,16 @@ nav > span:nth-child(2) > img:nth-child(3) {
   border: none;
   width: 340px;
   height: 35px;
+}
+
+.find-people > div:nth-child(1) > span > input:focus{
+  outline: none;
+}
+
+.btn-star {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .find-people > div:nth-child(1) > span > img {

@@ -7,6 +7,14 @@
 
 /* --------------------------------------- UNIVERSAL STYLES */
 
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 90%;
+}
+
 .btn-main {
   height: 50px;
   width: 225px;
@@ -612,8 +620,8 @@ nav {
   gap: 20px;
 }
 
-.footer-grid > div:nth-child(4) > div > input {
-  width: 275px;
+.footer-grid > div:nth-child(4) > div > span {
+  width: 100%;
   height: 44px;
   gap: 10px;
   border-width: 1px;
@@ -623,6 +631,20 @@ nav {
   padding-bottom: 14px;
   padding-left: 13px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.footer-grid > div:nth-child(4) > div > span > input {
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.footer-grid > div:nth-child(4) > div > span > input:focus{
+  outline: none;
 }
 
 .footer-grid > div:nth-child(4) > div > button {
@@ -656,3 +678,11 @@ nav {
 }
 
 /* FOOTER END */
+
+
+/* PERBAIKAN */
+
+.sosmed{
+  display: flex;
+  gap: 12px;
+}

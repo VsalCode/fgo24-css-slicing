@@ -5,6 +5,17 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  scale: 120%;
+}
+
+
 .container {
   min-height: 100vh;
   display: flex;

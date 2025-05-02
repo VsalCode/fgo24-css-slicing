@@ -170,3 +170,33 @@ body {
   width: 630px;
   height: 521px;
 }
+
+.email > span, .Password > span {
+  width: 100%;
+  height: 44px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  padding: 14px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.email > span > input, .Password  > span > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.email > span > input, .Password  > span > input:focus{
+  outline: none;
+}
+
+.Password  > span > button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+

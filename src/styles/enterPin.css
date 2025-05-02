@@ -5,9 +5,21 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+
 body {
   background-color: #2948ff;
 }
+
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  scale: 120%;
+}
+
 
 .container {
   height: 100vh;
@@ -69,16 +81,32 @@ body {
   flex-direction: column;
 }
 
-.register > div:nth-child(3) > .pin-grid {
+.pin-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   padding: 20px 0;
 }
 
-.pin-grid > div {
+.pin-grid > input {
   width: 66px;
   height: 66px;
+  border: none;
   border-bottom: 2px solid #929292;
+  outline: none;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.pin-grid > input:focus {
+  border-bottom: 2px solid #2948ff;
+  outline: none;
 }
 
 .pin-grid > div:nth-child(1) {
@@ -100,7 +128,7 @@ body {
   gap: 10px;
 }
 
-.register > div:nth-child(3) > div:nth-child(2) > button {
+button {
   width: 562px;
   height: 40px;
   gap: 10px;
@@ -110,6 +138,11 @@ body {
   color: white;
   border: none;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 90%;
 }
 
 .register > div:nth-child(3) > div:nth-child(2) > p {

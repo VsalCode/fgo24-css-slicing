@@ -5,6 +5,17 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  scale: 120%;
+}
+
+
 .container {
   height: 100%;
 }
@@ -221,6 +232,10 @@ nav > span:nth-child(2) > img:nth-child(3) {
   height: 35px;
 }
 
+.find-people > div:nth-child(1) > span > input:focus{
+  outline: none;
+}
+
 .find-people > div:nth-child(1) > span > img {
   width: 16px;
   height: 16px;
@@ -254,9 +269,10 @@ nav > span:nth-child(2) > img:nth-child(3) {
   height: 48px;
 }
 
-.find-people > div:nth-child(2) > div > img:nth-child(5) {
-  width: 24px;
-  height: 24px;
+.find-people > div:nth-child(2) > div > button  {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .green {

@@ -5,12 +5,31 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover{
+  scale: 120%;
+}
+
+
 .container {
   height: 100%;
 }
 
 .container > div {
   display: flex;
+}
+
+button{
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: 90%;
 }
 
 /* NAVBAR */
