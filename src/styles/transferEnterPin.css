@@ -11,10 +11,9 @@
   cursor: pointer;
 }
 
-.dropdown:hover{
+.dropdown:hover {
   scale: 120%;
 }
-
 
 .container {
   height: 100%;
@@ -95,7 +94,7 @@ nav > span:nth-child(2) > img:nth-child(3) {
   background-color: #fff;
   border: 1px solid #e8e8e8;
   width: 262px;
-  height: 70vh;
+  height: 100vh;
   top: 76px;
   left: -1px;
   padding: 24px 42px;
@@ -156,6 +155,127 @@ nav > span:nth-child(2) > img:nth-child(3) {
   padding-top: 30px;
   align-items: center;
   gap: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7); /* Transparansi untuk overlay */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.modal > .modal-box {
+  margin-top: 20vh;
+  margin-left: 40vh;
+  width: 450px;
+  height: 450px;
+  border-radius: 16px;
+  padding: 20px;
+  gap: 10px;
+  /* width: 90%; Batasi lebar modal */
+  /* max-width: 600px; Batas maksimal lebar modal */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden; /* Hindari elemen dalam modal melampaui batas */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.modal > .modal-box > p:first-child {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  padding-bottom: 40px;
+}
+
+.modal > .modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal > .modal-box > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0b132a;
+}
+.modal > .modal-box > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 166%;
+  letter-spacing: 0%;
+  color: #4f5665;
+}
+
+.pin-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.pin-grid > input {
+  width: 66px;
+  height: 66px;
+  border: none;
+  border-bottom: 2px solid #e8e8e8;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.pin-grid > input:focus {
+  border-bottom: 2px solid #2948ff;
+  outline: none;
+}
+
+.modal > .modal-box > button {
+  width: 100%;
+  height: 50px;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2948ff;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  margin: 30px 0;
+}
+
+.modal > .modal-box > p:last-child {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.modal > .modal-box > p:last-child > a {
+  color: #2948ff;
+  text-decoration: none;
 }
 
 /* ISI */
@@ -276,7 +396,7 @@ nav > span:nth-child(2) > img:nth-child(3) {
   align-items: center;
 }
 
-.find-people > div:nth-child(2) > span > div > div > img{
+.find-people > div:nth-child(2) > span > div > div > img {
   width: 16px;
   height: 16px;
 }
@@ -336,7 +456,7 @@ nav > span:nth-child(2) > img:nth-child(3) {
   border: none;
 }
 
-.amount > div > input:focus{
+.amount > div > input:focus {
   outline: none;
 }
 
@@ -382,6 +502,6 @@ nav > span:nth-child(2) > img:nth-child(3) {
   cursor: pointer;
 }
 
-.find-people > button:hover{
+.find-people > button:hover {
   opacity: 90%;
 }

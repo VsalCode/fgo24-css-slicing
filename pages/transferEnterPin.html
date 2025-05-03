@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer</title>
+    <link rel="stylesheet" href="../src/styles/transferEnterPin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <span class="logo">
+          <img src="../src/assets/logo.png" alt="" />
+          <p>E-Wallet</p>
+        </span>
+        <span>
+          <span>Ghaluh Wizard</span>
+          <img src="../src/icon/user-dashboard.png" alt="" />
+          <button class="dropdown">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.5 9L12.5 15L6.5 9" stroke="#4F5665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </span>
+      </nav>
+      <div>
+        <div class="sidebar">
+          <div>
+            <a href="./dashboard.html"><img src="../src/icon/dashboard.png  " alt="" />Dashboard</a>
+            <a href="./transfer.html"><img src="../src/icon/paper-plane-white.png" alt="" />Transfer</a>
+            <a href="./history.html"><img src="../src/icon/history.png" alt="" />History</a>
+            <a href="./topUp.html"><img src="../src/icon/topup.png" alt="" />Top Up</a>
+            <a href="./editProfile.html"><img src="../src/icon/profile.png" alt="" />Profile</a>
+            <a href="../index.html"><img src="../src/icon/keluar.png" alt="" />Keluar</a>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div class="modal">
+            <div class="modal-box">
+              <p>TRANSFER TO GHALUH 1</p>
+              <div>
+                <p>Enter Your Pin 👋</p>
+                <p>Enter Your Pin For Transaction</p>
+                <div class="pin-grid">
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                  <input type="text" />
+                </div>
+              </div>
+              <button>Next</button>
+              <p>Forgot Your Pin? <a href="">Reset</a></p>
+            </div>
+          </div>
+
+          <div class="guide">
+            <span>
+              <img src="../src/icon/paper-plane-blue.png" alt="" />
+              Transfer Money
+            </span>
+            <a href="../pages/transfer.html">
+              <img src="../src/assets/guide2.png" alt="" />
+            </a>
+          </div>
+          <div class="find-people">
+            <p>People Information</p>
+            <!-- Kotak User -->
+            <div>
+              <span>
+                <img src="../src/users/ghaluh.png" alt="" />
+                <div>
+                  <p>Ghaluh 1</p>
+                  <p>(239) 555-0108</p>
+                  <div><img src="../src/icon/verified.png" alt="" />Verified</div>
+                </div>
+              </span>
+              <img src="../src/icon/star.png" alt="" />
+            </div>
+            <div class="amount">
+              <p>Amount</p>
+              <p>Type the amount you want to transfer and then press continue to the next steps.</p>
+              <div>
+                <img src="../src/icon/money.png" alt="" />
+                <input type="text" placeholder="Enter Nominal Transfer" />
+              </div>
+            </div>
+            <div class="notes">
+              <p>Notes</p>
+              <p>You can add some notes for this transfer such as payment coffee or something</p>
+              <textarea name="" id="" rows="6">Enter your notes</textarea>
+            </div>
+            <button>Submit & Transfer</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
