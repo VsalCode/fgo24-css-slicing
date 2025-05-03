@@ -1,0 +1,518 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, Helvetica, sans-serif;
+}
+
+.dropdown {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown:hover {
+  scale: 120%;
+}
+
+.container {
+  height: 100%;
+}
+
+.container > div {
+  display: flex;
+}
+
+/* NAVBAR */
+nav {
+  width: 100%;
+  height: 76px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  border-width: 0 0 1px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 79px 0 44px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo > img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo > p {
+  font-family: Nunito Sans;
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #2948ff;
+}
+
+nav > span:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+nav > span:nth-child(2) > span {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+nav > span:nth-child(2) > img:nth-child(2) {
+  width: 48px;
+  height: 48px;
+}
+
+nav > span:nth-child(2) > img:nth-child(3) {
+  width: 18px;
+  height: 10px;
+  border-width: 2px;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  /* background-color: #2948ff; */
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 262px;
+  height: 100vh;
+  top: 76px;
+  left: -1px;
+  padding: 24px 42px;
+  gap: 15px;
+  position: sticky;
+  left: 0;
+  z-index: 20;
+}
+
+.sidebar > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.sidebar > div > a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+}
+
+.sidebar > div > a:nth-child(2) {
+  background-color: #2948ff;
+  color: white;
+  border-radius: 6px;
+}
+
+.sidebar > div > a {
+  width: 208px;
+  height: 45px;
+  text-decoration: none;
+  font-family: Montserrat;
+  color: #4f5665;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+}
+
+.sidebar > div > a > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* DASHBOARD UTAMA */
+
+.dashboard {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  height: 948px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  padding-top: 30px;
+  align-items: center;
+  gap: 20px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.modal > .modal-box {
+  margin-top: 17vh;
+  margin-left: 40vh;
+  width: 450px;
+  height: 500px;
+  border-radius: 16px;
+  padding: 20px;
+  gap: 10px;
+  /* width: 90%; Batasi lebar modal */
+  /* max-width: 600px; Batas maksimal lebar modal */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.modal > .modal-box > p:first-child {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.modal > .modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal > .modal-box > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0b132a;
+}
+
+.modal > .modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal > .modal-box > div > img {
+  width: 270px;
+  height: 270px;
+}
+
+.modal > .modal-box > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.modal > .modal-box > div > p:nth-child(2) > span {
+  color: #D00000;
+}
+
+.modal > .modal-box > div > p:nth-child(3) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4f5665;
+}
+
+.modal > .modal-box > button:nth-child(3) {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2948ff;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.modal > .modal-box > button:nth-child(4) {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: white;
+  color: #2948ff;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 2px solid #2948ff;
+  cursor: pointer;
+}
+
+.modal > .modal-box > button:hover {
+  opacity: 90%;
+}
+
+/* ISI */
+
+.guide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 1061px;
+}
+
+.guide > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  gap: 10px;
+}
+
+.guide > span > img {
+  width: 24px;
+  height: 24px;
+}
+
+.guide > a > img {
+  width: 609px;
+  height: 45px;
+}
+
+/* FIND PEOPLE */
+
+.find-people {
+  width: 1061px;
+  height: 720px;
+  top: 206px;
+  left: 300px;
+  border: 2px solid #e8e8e8;
+  padding: 30px;
+}
+
+.find-people p {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+}
+
+.find-people > div:nth-child(2) {
+  width: 994px;
+  height: 115px;
+  border-radius: 8px;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: #e8e8e8;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* NAMA, FOTO USER, VERIFIED */
+.find-people > div:nth-child(2) > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.find-people > div:nth-child(2) > span > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.find-people > div:nth-child(2) > span > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.find-people > div:nth-child(2) > span > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.find-people > div:nth-child(2) > span > div > p:nth-child(2) {
+  font-family: Plus Jakarta Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #4f5665;
+}
+
+.find-people > div:nth-child(2) > span > div > div {
+  width: 97px;
+  height: 25px;
+  border-radius: 6px;
+  gap: 8px;
+  border-left-width: 4px;
+  padding: 4px 12px 4px 8px;
+  background-color: #2948ff;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.find-people > div:nth-child(2) > span > div > div > img {
+  width: 16px;
+  height: 16px;
+}
+
+.find-people > div:nth-child(2) > img {
+  width: 24px;
+  height: 24px;
+}
+
+/* AMOUNT */
+
+.amount {
+  display: flex;
+  flex-direction: column;
+}
+
+.find-people > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  vertical-align: middle;
+  margin-top: 15px;
+}
+
+.find-people > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 20px 0;
+}
+
+.amount > div {
+  width: 994px;
+  height: 62px;
+  border-radius: 6px;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid #e8e8e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+
+.amount > div > input {
+  width: 100%;
+  font-size: 14px;
+  height: 59px;
+  border: none;
+}
+
+.amount > div > input:focus {
+  outline: none;
+}
+
+.amount > div > img {
+  width: 16px;
+  height: 16px;
+}
+
+.notes > textarea {
+  width: 100%;
+  /* height: 223px; */
+  border-radius: 6px;
+  gap: 10px;
+  padding: 10px;
+  color: #4f5665;
+  border: 2px solid #e8e8e8;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notes > textarea:focus {
+  outline: none;
+}
+
+.find-people > button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  margin-top: 15px;
+  border-radius: 6px;
+  gap: 8px;
+  padding: 4px 12px 4px 8px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  text-align: center;
+  background-color: #2948ff;
+  color: white;
+  cursor: pointer;
+}
+
+.find-people > button:hover {
+  opacity: 90%;
+}
