@@ -159,6 +159,12 @@ form > div > input {
   padding-top: 10px;
 }
 
+.form > p:last-child > a {
+  text-decoration: none;
+  color: #2948ff;
+}
+
+
 .btn-register {
   cursor: pointer;
   width: 100%;
