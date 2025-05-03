@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,47 +6,46 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
-
 body {
   background-color: #2948ff;
+  margin: 0;
+  padding: 0;
 }
-
-.dropdown {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown:hover{
-  scale: 120%;
-}
-
 
 .container {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  height: 100svh;
+  width: 100svw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
 }
 
-.register {
+/* Register Section */
+.pin {
   background-color: white;
+  flex: 1;
+  max-width: 50%;
+  width: 100%;
+  height: 100svh;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 70px;
+  gap: 10px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+  padding: 20px 70px;
 }
 
-.register > div:nth-child(1) {
+.pin > div:nth-child(1) {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   gap: 7px;
 }
 
-.register > div:nth-child(1) > span {
+.pin > div:nth-child(1) > span {
   font-family: Nunito Sans;
   font-weight: 700;
   font-size: 20px;
@@ -54,12 +54,12 @@ body {
   color: #2948ff;
 }
 
-.register > div:nth-child(1) > img {
+.pin > div:nth-child(1) > img {
   width: 32px;
   height: 32px;
 }
 
-.register > div:nth-child(2) > div:nth-child(1) > p {
+.pin > div:nth-child(2) > p:first-child {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 25px;
@@ -67,41 +67,31 @@ body {
   letter-spacing: 0%;
 }
 
-.register > div:nth-child(2) > div:nth-child(2) > p {
+.pin > div:nth-child(2) > p:last-child {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16 px;
   line-height: 166%;
   letter-spacing: 0%;
   padding-top: 20px;
 }
 
-.register > div:nth-child(3) {
-  display: flex;
-  flex-direction: column;
-}
-
 .pin-grid {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding: 20px 0;
 }
 
 .pin-grid > input {
   width: 66px;
   height: 66px;
   border: none;
-  border-bottom: 2px solid #929292;
-  outline: none;
+  border-bottom: 2px solid #e8e8e8;
   font-family: Montserrat;
   font-weight: 500;
   font-size: 30px;
   line-height: 100%;
-  letter-spacing: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .pin-grid > input:focus {
@@ -109,64 +99,134 @@ body {
   outline: none;
 }
 
-.pin-grid > div:nth-child(1) {
-  border-bottom: 2px solid #2948ff;
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 30px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.register > div:nth-child(3) > div:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
 button {
-  width: 562px;
-  height: 40px;
+  background-color: #2948ff;
+  color: white;
+  width: 100%;
+  height: 50px;
   gap: 10px;
   border-radius: 6px;
   padding: 10px;
-  background-color: #2948ff;
-  color: white;
-  border: none;
-  margin-top: 15px;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 90%;
-}
-
-.register > div:nth-child(3) > div:nth-child(2) > p {
   font-family: Montserrat;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
   letter-spacing: 0%;
   text-align: center;
-  padding-top: 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
 }
 
-.register > div:nth-child(3) > p > a {
+p > a{
   text-decoration: none;
+  color: #2948ff;
 }
 
+
+
+/* Ilustrasi Section */
 .ilustrasi {
   background-color: #2948ff;
+  flex: 1;
+  width: 50%;
+  /* max-width: 50%; Atur lebar maksimal */
+  max-height: 100%; /* Pastikan tinggi penuh */
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: flex-end;
 }
 
 .ilustrasi > div > img {
-  width: 527px;
-  height: 600px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Input Fields */
+.email > span,
+.Password > span {
+  width: 100%;
+  height: 44px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 2px solid #e8e8e8;
+  padding: 14px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.email > span > input,
+.Password > span > input {
+  width: 100%;
+  height: 40px;
+  border: none;
+}
+
+.email > span > input,
+.Password > span > input:focus {
+  outline: none;
+}
+
+.Password > span > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.auth-mobile,
+.auth-mobile > div {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    text-align: center;
+  }
+
+  .pin {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  .ilustrasi {
+    display: none;
+  }
+
+  .pin > div:nth-child(3) > a {
+    display: none;
+  }
+
+  /* H1 */
+  .pin > div:nth-child(2) > div:nth-child(1) > p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+  }
+
+  .pin > div:nth-child(2) > div:nth-child(2) > p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+  }
+  
+}
+
+@media (max-width:500px){
+  .pin-grid > input {
+    width: 40px;
+    height: 40px;
+  }
 }

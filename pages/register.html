@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Register | E-Wallet</title>
     <link rel="stylesheet" href="../src/styles/register.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,9 +21,9 @@
         </div>
         <div>
           <div>
-            <p>Start Accessing Banking Needs</p>
-            <p>With All Devices and All Platforms</p>
-            <p>With 30.000+ Users</p>
+            <p>Start Accessing Banking Needs
+              With All Devices and All Platforms
+              With 30.000+ Users</p>
           </div>
           <div>
             <p>Transfering money is eassier than ever, you can access Zwallet wherever you are. Desktop, laptop, mobile phone? we cover all of that for you!</p>
@@ -33,7 +33,23 @@
           <a href=""><img src="../src/icon/google.png" alt="" /> Sign In With Google</a>
           <a href=""><img src="../src/icon/facebook.png" alt="" /> Sign In With Facebook</a>
         </div>
-        <div>
+        <div class="auth-mobile">
+          <div>
+            <a><img src="../src/icon/google.png" alt="" /></a>
+            <a><img src="../src/icon/facebook.png" alt="" /></a>
+          </div>
+          <div class="or">
+            <svg width="129" height="30" viewBox="0 0 129 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.862488" y1="0.75" x2="129" y2="0.749987" stroke="#DEDEDE" stroke-width="0.5" />
+            </svg>
+
+            <span>Or</span>
+            <svg width="129" height="30" viewBox="0 0 129 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.862488" y1="0.75" x2="129" y2="0.749987" stroke="#DEDEDE" stroke-width="0.5" />
+            </svg>
+          </div>
+        </div>
+        <div class="form">
           <form action="">
             <div class="email">
               <label for="email">Email</label>
@@ -119,7 +135,7 @@
                     stroke-linejoin="round"
                   />
                 </svg>
-                <input type="text" placeholder="Confirm Your Password" id="confirm" name="confirm" />
+                <input type="text" placeholder="Enter Your password again" name="confirm" id="confirm" />
                 <button>
                   <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3 2.50008L13 13.5001" stroke="#4F5665" stroke-linecap="round" stroke-linejoin="round" />
@@ -136,14 +152,14 @@
                 </button>
               </span>
             </div>
-            <button type="submit">Register</button>
+            <button class="btn-register" type="submit">Register</button>
           </form>
           <p>Have An Account? <a href="../pages/login.html">Login</a></p>
         </div>
       </div>
       <div class="ilustrasi">
         <div>
-          <img src="../src/assets/register-3d.png" alt="" />
+          <img src="../src/assets/login-3d.png" alt="" />
         </div>
       </div>
     </div>

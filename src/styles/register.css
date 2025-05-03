@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,23 +8,36 @@
 
 body {
   background-color: #2948ff;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* height: 100svh; */
+  height: 140svh;
+  width: 100svw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
 }
 
+/* Register Section */
 .register {
   background-color: white;
+  flex: 1;
+  max-width: 50%;
+  width: 100%;
+  height: 140svh;
+  max-height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 70px;
+  gap: 10px;
   border-top-right-radius: 40px;
   border-bottom-right-radius: 40px;
+  padding: 20px 70px;
 }
 
 .register > div:nth-child(1) {
@@ -58,7 +72,7 @@ body {
 .register > div:nth-child(2) > div:nth-child(2) > p {
   font-family: Montserrat;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16 px;
   line-height: 166%;
   letter-spacing: 0%;
   padding-top: 20px;
@@ -71,14 +85,15 @@ body {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
 
 .register > div:nth-child(3) > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 562px;
+  width: 100%;
+  max-width: 562px;
   height: 40px;
   gap: 10px;
   border: 1px solid #e8e8e8;
@@ -109,28 +124,45 @@ body {
   flex-direction: column;
 }
 
-.register > div:nth-child(4) > form > div > label {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 100%;
-  padding: 10px 0;
+.or {
+  width: 100%;
+  height: 20px;
 }
 
-.register > div:nth-child(4) > form > div > input {
-  width: 562px;
+form > div > label {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 30px 0;
+}
+
+form > div > input {
+  width: 100%;
+  max-width: 562px;
   height: 40px;
   border: 1px solid #dedede;
   gap: 10px;
   border-radius: 8px;
-  padding-top: 14px;
-  padding-right: 13px;
-  padding-bottom: 14px;
-  padding-left: 13px;
+  margin: 14px 13px;
+  font-size: 16px;
 }
 
-.register > div:nth-child(4) > form > button {
-  width: 562px;
+.form > p:last-child {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4f5665;
+  padding-top: 10px;
+}
+
+.btn-register {
+  cursor: pointer;
+  width: 100%;
+  /* max-width: 562px; */
   height: 40px;
   gap: 10px;
   border-radius: 6px;
@@ -139,11 +171,8 @@ body {
   color: white;
   border: none;
   margin-top: 15px;
-  cursor: pointer;
-}
-
-.register > div:nth-child(4) > form > button:hover{
-  opacity: 90%;
+  text-align: center;
+  text-decoration: none;
 }
 
 .register > div:nth-child(4) > p {
@@ -160,19 +189,29 @@ body {
   text-decoration: none;
 }
 
+/* Ilustrasi Section */
 .ilustrasi {
   background-color: #2948ff;
+  flex: 1;
+  width: 50%;
+  /* max-width: 50%; Atur lebar maksimal */
+  max-height: 100%; /* Pastikan tinggi penuh */
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
 
 .ilustrasi > div > img {
-  width: 630px;
-  height: 521px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
 }
 
-.email > span, .Password > span {
+/* Input Fields */
+.email > span,
+.Password > span {
   width: 100%;
   height: 44px;
   gap: 10px;
@@ -182,20 +221,122 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px 0;
 }
 
-.email > span > input, .Password  > span > input {
+.email > span > input,
+.Password > span > input {
   width: 100%;
   height: 40px;
   border: none;
 }
 
-.email > span > input, .Password  > span > input:focus{
+.email > span > input,
+.Password > span > input:focus {
   outline: none;
 }
 
-.Password  > span > button{
+.Password > span > button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.auth-mobile,
+.auth-mobile > div {
+  display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    text-align: center;
+  }
+
+  .register {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+    box-sizing: border-box;
+  }
+  .ilustrasi {
+    display: none;
+  }
+
+  .register > div:nth-child(3) > a {
+    display: none;
+  }
+
+  /* H1 */
+  .register > div:nth-child(2) > div:nth-child(1) > p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: start;
+  }
+
+  .register > div:nth-child(2) > div:nth-child(2) > p {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  /* Hyperlink Register */
+  .form > p:last-child {
+    font-size: 14px;
+  }
+
+  /* OR */
+  .or {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .or > span {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.5%;
+    color: #4f5665;
+  }
+
+
+  /* AUTH MOBILE */
+  .auth-mobile {
+    display: flex;
+    align-items: center;
+  }
+
+  .auth-mobile > div {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .auth-mobile > div > a {
+    border: none;
+    width: 50%;
+    height: 45px;
+    gap: 10px;
+    border-radius: 100px;
+    border: 2px solid #e8e8e8;
+    padding: 10px;
+  }
+
+  .auth-mobile > div > a > img {
+    width: 24px;
+    height: 24px;
+  }
+
+  form  {
+    text-align: start;
+  }
 }
