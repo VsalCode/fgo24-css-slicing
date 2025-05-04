@@ -176,7 +176,7 @@
 }
 
 .find-people > div:nth-child(2) > a > span {
-  display: none;
+  display: inline;
 }
 
 .find-people > div:nth-child(2) > a > .span-mobile {
@@ -197,9 +197,10 @@
   height: 48px;
 }
 
-.span-mobile {
+.span-mobile, .span-mobile > span {
   display: none;
 }
+
 
 @media (max-width: 830px) {
   .dashboard{
@@ -255,5 +256,13 @@
   .find-people > div:nth-child(2) {
     width: 100%;
     padding: 0;
+  }
+
+  .find-people > div:nth-child(2) > a > span {
+    display: none;
+  }
+
+  .span-mobile, .span-mobile > span  {
+    display: block;
   }
 }
