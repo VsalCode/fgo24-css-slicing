@@ -164,8 +164,24 @@
     border: none;
   }
 
+  .change-password > form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .change-password > form > div {
+    margin: 25px 0 15px;
+  }
+
+  .change-password > form > div > input {
+    height: 35px;
+    width: 35px;
+  }
+
   .change-password > form > button {
-    max-width: 300px;
+    max-width: 332px;
     width: 100%;
   }
+
 }

@@ -379,9 +379,9 @@ hr {
     padding-top: 0;
   }
 
-  .account-information > p:first-child {
+  .account-information > p:first-child, .account-information > div > p:nth-child(1) {
     font-family: Montserrat;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: -0.6%;
@@ -389,6 +389,11 @@ hr {
 
   .account-information > div:nth-child(2) > span > div > p:nth-child(1), .account-information > div:nth-child(2) > span > div > p:nth-child(2)  {
     font-size: 14 px;
+  }
+
+  .account-information > div:nth-child(3) > div > input {
+    font-size: 14px;
+    height: 41px;
   }
 
   .payment {

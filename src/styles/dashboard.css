@@ -351,11 +351,6 @@
   color: #d00000;
 }
 
-
-.biru {
-  display: none;
-}
-
 @media (max-width: 1118px) {
   .dashboard {
     display: flex;
@@ -368,12 +363,18 @@
 }
 
 @media (max-width: 830px) {
-  .navbar-mobile > a:nth-child(1){
+  nav {
+    border: none;
+    margin: 0;
+  }
+
+  .navbar-mobile > a:nth-child(1) {
     color: #2948ff;
     font-weight: 700;
   }
-  
+
   .dashboard {
+    background: linear-gradient(to top, white 93%, #2948ff 7%);
     display: flex;
     align-items: center;
     width: 100%;
@@ -382,13 +383,13 @@
     padding: 30px 10px 100px;
   }
 
-  
   .dashboard > div:nth-child(1) {
     height: fit-content;
   }
-  
+
   /* --------------------------- Balance, income, expense --------------------------- */
-  .dashboard > div:nth-child(1) > div:nth-child(1)  {
+  .dashboard > div:nth-child(1) > div:nth-child(1) {
+    background-color: white;
     border-radius: 24px;
     border: 2px solid #e8e8e8;
     display: flex;
@@ -402,7 +403,7 @@
     display: none;
   }
 
-  .dashboard > div:nth-child(1) > div:nth-child(1) > div > div > span  {
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > div > span {
     font-family: Montserrat;
     font-weight: 500;
     font-size: 12px;
@@ -428,16 +429,14 @@
   }
 
   /* perintilan stonks */
-  .dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(3){
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(3) {
     font-size: 10px;
   }
-  
+
   .dashboard > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(3) {
     font-size: 10px;
     color: #d00000;
   }
-  
-
 
   /* FAST SERVICE */
   .title {
@@ -459,7 +458,7 @@
   .dashboard > div:nth-child(1) > div:nth-child(2) > span > button {
     width: 100%;
     height: 35px;
-  }  
+  }
 
   /* Income Chart */
 
@@ -482,11 +481,11 @@
     max-width: 100%;
   }
 
-  .transaction > div > p:nth-child(1){
+  .transaction > div > p:nth-child(1) {
     font-size: 14px;
   }
 
-  .users > div > div > img  {
+  .users > div > div > img {
     height: 40px;
     width: 40px;
     object-fit: contain;
@@ -500,7 +499,8 @@
     font-size: 10px;
   }
 
-  .users > div > .transfer, .users > div > .send {
+  .users > div > .transfer,
+  .users > div > .send {
     font-size: 12px;
   }
 }
