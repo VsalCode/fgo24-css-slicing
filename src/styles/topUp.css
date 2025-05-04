@@ -5,147 +5,12 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
-.dropdown {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown:hover{
-  scale: 120%;
-}
-
-
-.container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.container > div {
-  display: flex;
-  flex: 1;
-}
-
-/* NAVBAR */
-nav {
-  width: 100%;
-  height: 76px;
-  border-style: solid;
-  border-color: #e8e8e8;
-  border-width: 0 0 1px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 79px 0 44px;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo > img {
-  width: 32px;
-  height: 32px;
-}
-
-.logo > p {
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #2948ff;
-}
-
-nav > span:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-nav > span:nth-child(2) > span {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-}
-
-nav > span:nth-child(2) > img:nth-child(2) {
-  width: 48px;
-  height: 48px;
-}
-
-nav > span:nth-child(2) > img:nth-child(3) {
-  width: 18px;
-  height: 10px;
-  border-width: 2px;
-}
-
-/* SIDEBAR */
-
-.sidebar {
-  background-color: #fff;
-  border: 1px solid #e8e8e8;
-  width: 262px;
-  height: 70vh;
-  top: 76px;
-  left: -1px;
-  padding: 24px 42px;
-  gap: 15px;
-  position: sticky;
-  left: 0;
-  z-index: 20;
-}
-
-.sidebar > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 16px;
-}
-
-.sidebar > div > a {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-left: 20px;
-}
 
 .sidebar > div > a:nth-child(4) {
   background-color: #2948ff;
   color: white;
   border-radius: 6px;
 }
-
-.sidebar > div > a {
-  width: 208px;
-  height: 45px;
-  text-decoration: none;
-  font-family: Montserrat;
-  color: #4f5665;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-}
-
-.sidebar > div > a > img {
-  width: 24px;
-  height: 24px;
-}
-
-/* DASHBOARD UTAMA */
 
 .dashboard {
   background-color: #fff;
@@ -160,6 +25,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
   gap: 20px;
   overflow-y: auto;
 }
+
+
 
 /* ISI */
 

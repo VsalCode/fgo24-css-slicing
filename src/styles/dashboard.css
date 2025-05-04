@@ -5,164 +5,40 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
-.dropdown {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.dropdown:hover{
-  scale: 120%;
-}
-
-
-.container {
-  height: 100%;
-}
-
-.container > div {
-  display: flex;
-}
-
-button{
-  cursor: pointer;
-}
-
-button:hover{
-  opacity: 90%;
-}
-
-/* NAVBAR */
-nav {
-  width: 100%;
-  height: 76px;
-  border-style: solid;
-  border-color: #e8e8e8;
-  border-width: 0 0 1px 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 79px 0 44px;
-  background-color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 50;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo > img {
-  width: 32px;
-  height: 32px;
-}
-
-.logo > p {
-  font-family: Nunito Sans;
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  color: #2948ff;
-}
-
-nav > span:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-nav > span:nth-child(2) > span {
-  font-family: Montserrat;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-}
-
-nav > span:nth-child(2) > img:nth-child(2) {
-  width: 48px;
-  height: 48px;
-}
-
-nav > span:nth-child(2) > img:nth-child(3) {
-  width: 18px;
-  height: 10px;
-  border-width: 2px;
-}
-
-/* SIDEBAR */
-
-.sidebar {
-  /* background-color: #2948ff; */
-  background-color: #fff;
-  border: 1px solid #e8e8e8;
-  width: 262px;
-  height: 70vh;
-  top: 76px;
-  left: -1px;
-  padding: 24px 42px;
-  gap: 15px;
-  position: sticky;
-  left: 0;
-  z-index: 20;
-}
-
-.sidebar > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.sidebar > div > a {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding-left: 20px;
-}
-
 .sidebar > div > a:nth-child(1) {
   background-color: #2948ff;
   color: white;
   border-radius: 6px;
 }
 
-.sidebar > div > a {
-  width: 208px;
-  height: 45px;
-  text-decoration: none;
-  font-family: Montserrat;
-  color: #4f5665;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.6%;
-}
-
-.sidebar > div > a > img {
-  width: 24px;
-  height: 24px;
-}
-
 /* DASHBOARD UTAMA */
+
+/* .dashboard { 
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+     width: 768px; */
+/* height: 948px; */
+/* width: 100%; */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* padding-top: 20px; */
+/* gap: 20px; 
+}*/
 
 .dashboard {
   background-color: #fff;
   border: 1px solid #e8e8e8;
-  /* width: 768px; */
-  height: 948px;
+  flex: 1;
+  min-height: calc(100vh - 76px);
   display: flex;
-  justify-content: center;
+  width: 100%;
+  /* flex-direction: column; */
+  justify-content: flex-start;
+  padding: 30px 10px;
   /* align-items: center; */
-  padding-top: 20px;
   gap: 20px;
+  overflow-y: auto;
 }
 
 /* INFORMATION */
@@ -170,7 +46,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
 .dashboard > div:nth-child(1) {
   /* background-color: darkblue; */
   position: relative;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: 843px;
   display: flex;
   justify-content: center;
@@ -180,7 +57,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
 }
 
 .dashboard > div:nth-child(1) > div:nth-child(1) {
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: 147px;
   top: 285px;
   left: 300px;
@@ -194,8 +72,9 @@ nav > span:nth-child(2) > img:nth-child(3) {
 /* BALANCE, INCOME, EXPENSE */
 
 .dashboard > div:nth-child(1) > div:nth-child(1) > div {
-  width: 222px;
-  height: 147pxx;
+  max-width: 222px;
+  width: 100%;
+  height: 147px;
   top: 120px;
   left: 778px;
   border-radius: 6px;
@@ -265,16 +144,15 @@ nav > span:nth-child(2) > img:nth-child(3) {
 
 .dashboard > div:nth-child(1) > div:nth-child(2) {
   border: 2px solid #e8e8e8;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: 81px;
-  top: 285px;
-  left: 300px;
   border-radius: 6px;
   border-width: 1px;
   display: flex;
-  justify-content: center;
-  gap: 300px;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 20px;
 }
 
 .title {
@@ -316,7 +194,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
 
 .income-chart {
   border: 2px solid #e8e8e8;
-  width: 700px;
+  max-width: 700px;
+  width: 100%;
   height: 574px;
   border-width: 1px;
   position: relative;
@@ -348,7 +227,8 @@ nav > span:nth-child(2) > img:nth-child(3) {
 }
 
 .income-chart > div > span > button {
-  width: 113px;
+  max-width: 113px;
+  width: 100%;
   height: 35px;
   gap: 10px;
   border-radius: 6px;
@@ -369,16 +249,20 @@ nav > span:nth-child(2) > img:nth-child(3) {
 }
 
 .income-chart > div > img {
-  width: 668px;
-  height: 472px;
+  max-width: 668px;
+  max-height: 472px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* TRANSACTION */
 
 .transaction {
   border: 2px solid #e8e8e8;
-  width: 341px;
-  height: 843px;
+  max-width: 341px;
+  width: 100%;
+  height: fit-content;
   top: 120px;
   left: 1020px;
   border-radius: 6px;
@@ -411,45 +295,37 @@ nav > span:nth-child(2) > img:nth-child(3) {
 
 .users {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  gap: 20px;
   margin-top: 20px;
 }
 
 .users > div {
-  width: 298px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin: 10px 0;
-}
-
-.users > div > img {
-  width: 56px;
-  height: 56px;
-  top: 190px;
-  left: 1038px;
-  border-radius: 10px;
+  align-items: center;
 }
 
 .users > div > div {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
-.users > div > div > p:nth-child(1) {
+.users > div > div > img {
+  height: 56px;
+  width: 56px;
+}
+
+.users > div > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.users > div > div > div > p:nth-child(1) {
   font-family: Montserrat;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
-}
-
-.users > div > div > p:nth-child(2) {
-  font-family: Montserrat;
-  font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -473,4 +349,158 @@ nav > span:nth-child(2) > img:nth-child(3) {
   letter-spacing: 0%;
   text-align: right;
   color: #d00000;
+}
+
+
+.biru {
+  display: none;
+}
+
+@media (max-width: 1118px) {
+  .dashboard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transaction {
+    width: 100%;
+  }
+}
+
+@media (max-width: 830px) {
+  .navbar-mobile > a:nth-child(1){
+    color: #2948ff;
+    font-weight: 700;
+  }
+  
+  .dashboard {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    height: fit-content;
+    padding: 30px 10px 100px;
+  }
+
+  
+  .dashboard > div:nth-child(1) {
+    height: fit-content;
+  }
+  
+  /* --------------------------- Balance, income, expense --------------------------- */
+  .dashboard > div:nth-child(1) > div:nth-child(1)  {
+    border-radius: 24px;
+    border: 2px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 108px;
+  }
+
+  /* Icon biru yg disebelah Balance, income, expense */
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > div > img {
+    display: none;
+  }
+
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > div > span  {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  /* masing2 kotak nya */
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div {
+    border: none;
+    height: fit-content;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(2) {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  /* perintilan stonks */
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div > p:nth-child(3){
+    font-size: 10px;
+  }
+  
+  .dashboard > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) > p:nth-child(3) {
+    font-size: 10px;
+    color: #d00000;
+  }
+  
+
+
+  /* FAST SERVICE */
+  .title {
+    display: none;
+  }
+
+  .dashboard > div:nth-child(1) > div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+
+  .dashboard > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+    display: flex;
+    width: 100%;
+  }
+
+  .dashboard > div:nth-child(1) > div:nth-child(2) > span > button {
+    width: 100%;
+    height: 35px;
+  }  
+
+  /* Income Chart */
+
+  .income-chart {
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .income-chart > div > span > button {
+    font-size: 10px;
+  }
+
+  .income-chart > div > span {
+    font-size: 14px;
+  }
+
+  /* TRANSACTION */
+
+  .transaction {
+    max-width: 100%;
+  }
+
+  .transaction > div > p:nth-child(1){
+    font-size: 14px;
+  }
+
+  .users > div > div > img  {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+
+  .users > div > div > div > p:nth-child(1) {
+    font-size: 12px;
+  }
+
+  .users > div > div > div > p:nth-child(2) {
+    font-size: 10px;
+  }
+
+  .users > div > .transfer, .users > div > .send {
+    font-size: 12px;
+  }
 }

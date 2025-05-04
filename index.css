@@ -395,9 +395,15 @@ nav {
   margin-bottom: 30px;
 }
 
-.trusted-partners > div:nth-child(2) > div {
+.testimoni {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+.testimoni > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .box {
@@ -815,6 +821,13 @@ nav {
     text-align: center;
     width: 70%;
     margin-bottom: 30px;
+    gap: 10px;
+  }
+
+  .benefit > div > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   /* --------------------- welcome ------------------------- */
@@ -933,6 +946,11 @@ nav {
 
   /* --------------------- Testimoni ------------------------- */
   
+  .testimoni > button {
+    display: none;
+  }
+  
+
   .box {
     width: 100%;
     height: auto;
