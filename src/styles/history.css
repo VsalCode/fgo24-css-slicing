@@ -66,13 +66,14 @@
   top: 206px;
   left: 300px;
   border: 2px solid #e8e8e8;
+  padding: 0 20px;
 }
 
 .find-people > div:nth-child(1) {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding: 20px 0;
 }
 
 .find-people > div:nth-child(1) > p {
@@ -172,12 +173,38 @@
   width: 1003px;
 }
 
-.pages > div > span {
+.pages > div > span:nth-child(1) {
   font-family: Inter;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0%;
+}
+
+.pages > div > span:nth-child(2){
+  display: flex;
+  gap: 14px;
+  font-size: 12px;
+  color: #4F5665;
+}
+
+.pages > div > span:nth-child(2) > button {
+  font-weight: 600;
+  background-color: transparent; 
+  border: none;
+  color: #4F5665;
+  cursor: pointer;
+}
+
+.pages > div > span:nth-child(2) > a:first-child{
+  color: #2948FF;
+}
+
+.pages > div > span:nth-child(2) > a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .pages > div > img {
@@ -236,9 +263,11 @@
 
   .find-people {
     margin-top: 50px;
+    padding: 0;
   }
 
   .find-people > div:nth-child(1) {
+    padding: 20px 20px 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -258,7 +287,7 @@
   }
 
   .find-people > div:nth-child(2) {
-    padding: 0 20px;
+    padding: 20px 20px 0;
   }
 
   .find-people > div:nth-child(2) > div > img {
