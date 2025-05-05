@@ -385,6 +385,19 @@
   opacity: 90%;
 }
 
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide spin buttons in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
 @media (max-width: 830px){
   nav,
   .guide > a > img,

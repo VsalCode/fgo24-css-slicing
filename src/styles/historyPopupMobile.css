@@ -240,6 +240,10 @@
   display: none;
 }
 
+.modal {
+  display: none;
+}
+
 @media (max-width: 830px) {
   /* HISTORY */
   .history-list {
@@ -261,9 +265,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
+    text-decoration: none;
   }
 
   .history-list-mobile > a > div:first-child > span {
+    text-decoration: none;
     font-family: Plus Jakarta Sans;
     font-weight: 400;
     font-size: 14px;
@@ -308,6 +314,8 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    z-index: 100;
+    /* position: absolute; */
   }
 
   .guide > span {
@@ -324,8 +332,8 @@
   }
 
   .find-people {
-    margin-top: 50px;
     padding: 0;
+    /* position: relative; */
   }
 
   .find-people > div:nth-child(1) {
@@ -348,10 +356,6 @@
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
-  }
-
-  .find-people > div:nth-child(2) {
-    padding: 20px 20px 0;
   }
 
   .find-people > div:nth-child(2) > div > img {
@@ -378,5 +382,84 @@
 
   .pages > div > img {
     display: none;
+  }
+
+  .modal {
+    background-color: black;
+    opacity: 90%;
+    position: absolute;
+    max-height: 150vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-box {
+    margin-top: 3rem;
+    border-radius: 24px;
+    position: fixed;
+    z-index: 70;
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 10px;
+    gap: 7px;
+  }
+
+  .modal-box > p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #4f5665;
+  }
+
+  .modal-box > div:nth-child(2) > img {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+  }
+
+  .modal-box > div > p:first-child {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .modal-box > div > p:last-child {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .modal-box > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-box > div > button {
+    width: 100%;
+    max-width: 290px;
+    height: 35px;
+    border-radius: 8px;
+  }
+
+  .modal-box > div > button:first-child {
+    background-color: white;
+    border: 2px solid #d00000;
+  }
+  .modal-box > div > button:last-child {
+    background-color: #2948ff;
+    color: white;
+    border: none;
   }
 }

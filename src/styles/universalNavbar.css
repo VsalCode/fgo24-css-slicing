@@ -1,20 +1,61 @@
 /* UNIVERSAL NAVBAR */
-
-
 .dropdown {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.dropdown:hover{
-  scale: 120%;
+.dropdown-box {
+  display: none;
 }
 
+.dropdown:hover > .dropdown-box{
+  position: fixed;
+  z-index: 70;
+  max-width: 248px;
+  width: 100%;
+  max-height: 142px;
+  height: 100%;
+  gap: 10px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0px #0b132a14;
+  right: 0;
+  margin-right: 40px;
+}
+
+.dropdown-box > div:last-child {
+  color: #d00000;
+}
+
+.dropdown-box > div {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  border-radius: 6px;
+  padding: 0 0 0 10px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.dropdown-box > div:hover, .dropdown-svg:hover{
+  background-color: #2948ff;
+  color: white;
+  stroke: white;
+}
 
 .container {
   min-height: 100vh;
   display: flex;
+  position: relative;
   flex-direction: column;
 }
 
@@ -138,6 +179,10 @@ nav > span:nth-child(2) > img:nth-child(3), nav > div:nth-child(2) > img:nth-chi
 
 .navbar-mobile > a {
   display: none;
+}
+
+.sidebar > div > a:last-child {
+  color: #d00000;
 }
 
 @media (max-width: 830px) {
