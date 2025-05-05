@@ -203,6 +203,38 @@
 
 
 @media (max-width: 830px) {
+
+  nav {
+    border: none;
+    margin: 0;
+    padding: 30px 0 35px 20px;
+  }
+
+  nav > div {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  nav > div:nth-child(2) > span {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav > div:nth-child(2) > img:nth-child(2) {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+  }
+
+  nav > div:nth-child(2) > span::before {
+    content: "Hello";
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.6%;
+  }
+
   .dashboard{
     padding-top: 0;
   }

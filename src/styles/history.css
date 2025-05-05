@@ -207,10 +207,9 @@
   font-weight: 500;
 }
 
-.pages > div > img {
-  width: 335px;
-  height: 18px;
-  gap: 20px;
+.pages > div > span:nth-child(2) > a:hover, .pages > div > span:nth-child(2) > button:hover{
+  color: #2948FF;
+  color: #2948FF;
 }
 
 .find-people > div > a > span{

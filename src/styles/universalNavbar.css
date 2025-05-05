@@ -61,14 +61,14 @@ nav {
   color: #2948ff;
 }
 
-nav > span:nth-child(2) {
+nav > span:nth-child(2), nav > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 
-nav > span:nth-child(2) > span {
+nav > span:nth-child(2) > span, nav > div:nth-child(2) > span  {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 16px;
@@ -76,12 +76,12 @@ nav > span:nth-child(2) > span {
   letter-spacing: -0.6%;
 }
 
-nav > span:nth-child(2) > img:nth-child(2) {
+nav > span:nth-child(2) > img:nth-child(2), nav > div:nth-child(2) > img:nth-child(2) {
   width: 48px;
   height: 48px;
 }
 
-nav > span:nth-child(2) > img:nth-child(3) {
+nav > span:nth-child(2) > img:nth-child(3), nav > div:nth-child(2) > img:nth-child(3)  {
   width: 18px;
   height: 10px;
   border-width: 2px;
@@ -171,6 +171,7 @@ nav > span:nth-child(2) > img:nth-child(3) {
     text-align: center;
     text-decoration: none;
     height: 100%;
+    flex: 1;
   }
 
   nav {
@@ -179,11 +180,11 @@ nav > span:nth-child(2) > img:nth-child(3) {
     height: 54px;
   }
 
-  nav > span:nth-child(2) > span {
+  nav > span:nth-child(2) > span, nav > div:nth-child(2) > span {
     font-size: 12px;
   }
 
-  nav > span:nth-child(2) > img:nth-child(2) {
+  nav > span:nth-child(2) > img:nth-child(2), nav > div:nth-child(2) > img:nth-child(2) {
     width: 40px;
     height: 40px;
     object-fit: contain;
