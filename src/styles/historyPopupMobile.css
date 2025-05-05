@@ -314,7 +314,7 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
-    z-index: 100;
+    /* z-index: 100; */
     /* position: absolute; */
   }
 
@@ -385,29 +385,30 @@
   }
 
   .modal {
-    background-color: black;
-    opacity: 90%;
-    position: absolute;
-    max-height: 150vh;
+    background-color: rgba(0, 0, 0, 0.808) ;
+    position: fixed;
     height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
   }
 
   .modal-box {
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
     border-radius: 24px;
-    position: fixed;
     z-index: 70;
     background-color: white;
-    height: 70%;
+    height: 71%;
     width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 10px;
-    gap: 7px;
+    padding: 30px 20px;
+    gap: 10px;
+    margin-bottom: 1.5rem;
   }
 
   .modal-box > p {
@@ -419,15 +420,15 @@
   }
 
   .modal-box > div:nth-child(2) > img {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 4px;
   }
 
   .modal-box > div > p:first-child {
     font-family: Montserrat;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 0%;
   }
@@ -435,7 +436,7 @@
   .modal-box > div > p:last-child {
     font-family: Plus Jakarta Sans;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 20px;
     letter-spacing: 0%;
   }
@@ -446,20 +447,25 @@
     gap: 10px;
   }
 
-  .modal-box > div > button {
+  .modal-box > div > button, .modal-box > div > a {
     width: 100%;
     max-width: 290px;
-    height: 35px;
+    font-size: 12px;
+    height: 29px;
     border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .modal-box > div > button:first-child {
     background-color: white;
-    border: 2px solid #d00000;
+    border: 1px solid #d00000;
+    
   }
-  .modal-box > div > button:last-child {
+  .modal-box > div > a {
     background-color: #2948ff;
     color: white;
-    border: none;
+    text-decoration: none;
   }
 }

@@ -228,13 +228,19 @@ button:hover {
     padding: 0 20px;
   }
 
-  div > .find-people {
-    border: none;
+  .guide > span > span {
+    font-size: 14px;
+    font-weight: 500;
   }
 
-  .find-people > div:nth-child(1) > p:nth-child(1) {
+  div > .find-people {
+    border: none;
+    padding-top: 0;
+  }
+
+  .find-people > div:nth-child(1) > p, form > div > label, .profile-picture > p, .change > a{
     font-weight: 500;
-    font-size: 14p  x;
+    font-size: 14px;
   }
 
   .profile-picture {
@@ -256,5 +262,6 @@ button:hover {
 
   .profile-picture > div:nth-child(2) > button {
     font-size: 12px;
+    height: 38px;
   }
 }

@@ -365,7 +365,7 @@
   nav > div:nth-child(2) > span {
     display: flex;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 14px;
   }
 
   nav > div:nth-child(2) > img:nth-child(2) {
@@ -375,7 +375,7 @@
   }
 
   nav > div:nth-child(2) > span::before {
-    content: "Hello";
+    content: "Hello,";
     font-family: Montserrat;
     font-weight: 400;
     font-size: 12px;

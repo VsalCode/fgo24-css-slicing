@@ -358,6 +358,11 @@ hr {
     margin: 0;
   }
 
+  .guide > span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
   .guide > span > img {
     display: none;
   }
@@ -399,5 +404,10 @@ hr {
   .payment {
     border: none;
     margin: 0;
+    padding-top: 15px;
+  }
+
+  .payment > p:first-child, .payment > div > span:nth-child(1), .payment > div > span:nth-child(2), .payment > p:last-child {
+    font-size: 14px;
   }
 }

@@ -268,8 +268,8 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
     color: #4f5665;
+    text-decoration: none;
   }
 
   .history-list-mobile > a > div:first-child {
