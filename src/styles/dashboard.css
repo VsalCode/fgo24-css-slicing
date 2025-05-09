@@ -159,11 +159,12 @@
   gap: 20px;
 }
 
-.dashboard > div:nth-child(1) > div:nth-child(2) > span > button {
-  width: 109px;
+.dashboard > div:nth-child(1) > div:nth-child(2) > span > a {
+  width: 100%;
   height: 45px;
   padding: 4px 12px 4px 8px;
   gap: 8px;
+  font-size: 14px;
   border-radius: 6px;
   background-color: #2948ff;
   color: white;
@@ -171,9 +172,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
-.dashboard > div:nth-child(1) > div:nth-child(2) > span > button > img {
+.dashboard > div:nth-child(1) > div:nth-child(2) > span > a > img {
   width: 22px;
   height: 19px;
 }
@@ -473,6 +475,7 @@
     justify-content: center;
     align-items: center;
     border: none;
+    padding: 0;
   }
 
   .dashboard > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
@@ -480,9 +483,10 @@
     width: 100%;
   }
 
-  .dashboard > div:nth-child(1) > div:nth-child(2) > span > button {
+  .dashboard > div:nth-child(1) > div:nth-child(2) > span > a {
     width: 100%;
     height: 35px;
+    font-size: 12px;
   }
 
   /* Income Chart */

@@ -56,19 +56,25 @@ button:hover {
   background-color: white;
   width: 100%;
   overflow-x: hidden;
+  position: relative;
+  height: fit-content;
 }
 
 .container {
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 20px;
+  padding: 3vh 20px;
   background-color: #2948ff;
 }
 
 /* --------------------------------------- NAVBAR */
 
-nav {
+.nav-mobile{
+  display: none;
+}
+
+.container > nav:first-child {
   font-family: Nunito Sans;
   display: flex;
   justify-content: space-between;
@@ -76,7 +82,9 @@ nav {
   height: 76px;
   max-width: 1180px;
   margin: 0 auto;
-  /* padding: 20px 0; */
+  position: sticky;
+  top: 0;
+  /* padding: 20px   0; */
 }
 
 .logo {
@@ -715,34 +723,42 @@ nav {
   display: none;
 }
 
-@media (max-width: 808px) {
-  .wrapper {
-    width: 100%;
+@media (max-width: 500px){
+  .title{
+    text-align: start;
   }
+}
 
-  .container {
+@media (max-width: 933px) {
+  .wrapper, .container{
     position: relative;
   }
 
-  nav {
-    position: sticky;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ffffff;
-  }
-
-  nav > span:nth-child(2) {
+  
+  .container > nav:first-child {
     display: none;
   }
 
-  .logo > p {
-    font-size: 20px;
+  .nav-mobile {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-mobile > div:first-child{
+    display: flex;
+    background-color: #2948ff;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 74px;
+    width: 100%;
+    border-bottom: 1px solid white;
   }
 
-  .logo > img {
-    width: 32px;
-    height: 32px;
+  .off {
+    display: none;
   }
 
   .hamburger {
@@ -755,68 +771,54 @@ nav {
     position: relative;
   }
 
-  .hover-navbar {
-    display: none;
-  }
-
-  .hamburger:hover > .hover-navbar {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin-top: 55px;
-  }
-
-  .hover-navbar > .hamburger-box {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    min-width: 320px;
+  .on {
     width: 100%;
     height: 154px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 20px;
+    gap: 18px;
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
-    padding: 0 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    align-items: center;
     box-shadow: 0px 4px 25px 0px #00000026;
+
   }
 
-  .hover-navbar > .hamburger-box > a {
-    width: 100%;
+  .on > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #2948ff;
+    width: 90%;
     height: 48px;
     gap: 6px;
     padding: 12px 18px;
-    border-radius: 5px;
-    border-width: 1px;
-    background-color: white;
     text-decoration: none;
     color: #2948ff;
-    font-family: Montserrat;
-    font-weight: 500;
     font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.75px;
-    text-align: center;
+    font-weight: 500;
+    border-radius: 5px;
   }
 
-  .hover-navbar > .hamburger-box > a:hover{
-    background-color: #2948ff;
+  .on > a:hover {
+    background: #2948ff;
     color: white;
+  }
+  
+  .off {
+    display: none;
   }
 
   .container {
-    position: relative;
     height: fit-content;
     padding: 0 20px;
   }
 
   .title {
-    text-align: start;
+    text-align: center;
   }
 
   .title > p {
@@ -900,6 +902,10 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+  }
+
+  .benefit > div > div > img {
+    margin: 0;
   }
 
   /* --------------------- welcome ------------------------- */

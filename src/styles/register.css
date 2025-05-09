@@ -12,10 +12,122 @@ body {
   padding: 0;
 }
 
+/* ALERT */
+
+.alert-off{
+  display: none;
+}
+
+.alert-on {
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert-box {
+  background-color: white;
+  height: 50%;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+  box-shadow: 0px 4px 25px 0px #00000026;
+}
+
+.alert-box > img {
+  width: 200px;
+  height: 200px;
+}
+
+.alert-box > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.alert-box > button {
+  cursor: pointer;
+  background-color: #FEC355;
+  color: black;
+  font-weight: 500;
+  padding: 10px 0;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+
+.success-off {
+  display: none;
+}
+
+.success-on {
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-box {
+  background-color: white;
+  height: 50%;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+  box-shadow: 0px 4px 25px 0px #00000026;
+}
+
+.success-box > img {
+  width: 200px;
+  height: 200px;
+}
+
+.success-box > p {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.success-box > p:last-child {
+  color: #2948ff;
+}
+
+/* ------------------ */
+
 .container {
-  /* height: 100svh; */
-  height: 140svh;
-  width: 100svw;
+  height: 110svh;
+  /* height: fit-content; */
+  flex: 1 ;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,7 +141,7 @@ body {
   flex: 1;
   max-width: 50%;
   width: 100%;
-  height: 140svh;
+  height: fit-content;
   max-height: 100%;
   display: flex;
   justify-content: center;
@@ -195,6 +307,8 @@ form > div > input {
   text-decoration: none;
 }
 
+
+
 /* Ilustrasi Section */
 .ilustrasi {
   background-color: #2948ff;
@@ -261,17 +375,19 @@ form > div > input {
     gap: 0;
     text-align: center;
   }
-
+  
   .register {
     max-width: 100%;
     width: 100%;
     height: 100%;
+    flex: 1;
     margin: 0;
     padding: 20px;
     border-radius: 0;
     box-sizing: border-box;
   }
   .ilustrasi {
+    background-color: white;
     display: none;
   }
 
