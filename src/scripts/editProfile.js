@@ -31,33 +31,30 @@ form.addEventListener("submit", async (e) => {
   const newEmail = e.target.email.value;
   const file = fileInput.files[0];
 
-  const getUserInfo = JSON.parse(localStorage.getItem("user"))
+  const getUserInfo = JSON.parse(localStorage.getItem("user")) || {};
 
-  getUserInfo.email = newEmail;
-  getUserInfo.fullname = newFullname;
-  getUserInfo.phone = addPhoneNumber;
+  getUserInfo.fullname = newFullname || getUserInfo.fullname;
+  getUserInfo.phone = addPhoneNumber || getUserInfo.phone;
+  getUserInfo.email = newEmail || getUserInfo.email;
 
   if (file) {
-
     const reader = new FileReader();
     reader.onload = function (event) {
       const base64Image = event.target.result;
       getUserInfo.profileImage = base64Image;
 
       localStorage.setItem("user", JSON.stringify(getUserInfo));
-
       editProfileImage.src = base64Image;
+
       window.location.reload();
     };
     reader.readAsDataURL(file);
-
   } else {
-
     localStorage.setItem("user", JSON.stringify(getUserInfo));
     window.location.reload();
-
   }
 });
+
 
 const savedUser = JSON.parse(localStorage.getItem("user"));
 if (savedUser?.profileImage) {
