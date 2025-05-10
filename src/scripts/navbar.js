@@ -5,7 +5,7 @@ const greetings = document.querySelector('nav > div:nth-child(2) > span')
 const getUser = JSON.parse(window.localStorage.getItem('user'))
 
 const getName = getUser.email.split('@')[0]
-console.log(getName);
+// console.log(getName);
 
 greetings.textContent = getName
 
