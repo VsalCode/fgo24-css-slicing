@@ -16,5 +16,3 @@
     detailName.textContent = getUsername
     detailPhone.textContent = getPhone
     detailImg.setAttribute('src', getImage)
-
-    

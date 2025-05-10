@@ -120,6 +120,8 @@ nav > span:nth-child(2) > span, nav > div:nth-child(2) > span  {
 nav > span:nth-child(2) > img:nth-child(2), nav > div:nth-child(2) > img:nth-child(2) {
   width: 48px;
   height: 48px;
+  object-fit: cover;
+  border-radius: 40px;
 }
 
 nav > span:nth-child(2) > img:nth-child(3), nav > div:nth-child(2) > img:nth-child(3)  {
