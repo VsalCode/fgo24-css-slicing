@@ -7,20 +7,23 @@ form.addEventListener("submit", (e) => {
 
   const getUser = JSON.parse(window.localStorage.getItem("user"));
   // console.log(typeof getUser.email);
+  const userPassword = window.atob(getUser.password)
+  // console.log(userPassword);
+  
 
   const alertText = document.querySelector(".alert-box > p ");
 
-  if (email === getUser.email && password === getUser.password) {
+  if (email === getUser.email && password === userPassword) {
 
     const successPopUp = document.querySelector(".success-off");
     successPopUp.classList.replace("success-off", "success-on");
 
     setTimeout(() => {
-      window.location.href = "/pages/dashboard.html";
+      window.location.href = "/pages/enterPin.html";
     }, 3000)
   } else if (email === "" || password === "" || (email === "" && password === "")) {
 
-    alertText.textContent = "Email dan Input Tidak Boleh Kosong!"
+    alertText.textContent = "Email atau Input Tidak Boleh Kosong!"
     alertToogle.classList.replace("alert-off", "alert-on");
 
   } else if (email !== getUser.email) {
@@ -28,7 +31,7 @@ form.addEventListener("submit", (e) => {
     alertText.textContent = "Email yang anda inputkan salah!"
     alertToogle.classList.replace("alert-off", "alert-on");
   
-  } else if (password !== getUser.password) {
+  } else if (password !== userPassword) {
 
     alertText.textContent = "Password yang anda inputkan salah!"
     alertToogle.classList.replace("alert-off", "alert-on");

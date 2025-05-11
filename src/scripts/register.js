@@ -1,5 +1,8 @@
 // REGISTER LOGIC
 
+const alertToogle = document.querySelector(".container > div:first-child");
+const alertBtn = document.querySelector(".alert-box > button");
+
 const form = document.querySelector(".form > form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -8,42 +11,48 @@ form.addEventListener("submit", (e) => {
   const password = e.target.password.value;
   const confirmPassword = e.target.confirm.value;
 
-  const alertDiv = document.querySelector(".container > div:first-child");
+  const password64 = window.btoa(password)
+  
+  
+
   const alertText = document.querySelector(".alert-box > p ");
-  const alertBtn = document.querySelector(".alert-box > button");
 
   if (password === "") {
     alertText.textContent = "Password harus diisi!";
-    alertToogle.classList.replace("alert-off", "alert-on");
-  } else if (email === "") {
+    alertToogle.classList.replace("alert-off", "alert-on")
+    return;
+  } 
+  
+  if (email === "") {
     alertText.textContent = "Email harus diisi!";
     alertToogle.classList.replace("alert-off", "alert-on");
-  } else if (password !== confirmPassword) {
+    return;
+  } 
+  
+  if (password !== confirmPassword) {
     alertText.textContent = "password harus sama dengan confirm password";
     alertToogle.classList.replace("alert-off", "alert-on");
-  } else {
+    return;
+  } 
     const successPopUp = document.querySelector(".success-off");
     successPopUp.classList.replace("success-off", "success-on");
 
     // console.log({email: email, password: password});
     const user = {
       email: email,
-      password: password,
+      password: password64,
     };
 
     const addUser = JSON.stringify(user);
     window.localStorage.setItem("user", addUser);
 
     setTimeout(() => {
-      window.location.href = "/pages/login.html";
+      window.location.href = "/pages/createPin.html";
     }, 3000 )
-  }
 });
 
 // BUTTON ALERT
 // ALERT
-const alertToogle = document.querySelector(".container > div:first-child");
-const alertBtn = document.querySelector(".alert-box > button");
 
 alertBtn.addEventListener("click", () => {
   alertToogle.classList.replace("alert-on", "alert-off");

@@ -155,7 +155,13 @@
   height: 16px;
 }
 
-.people-information > div:nth-child(2) > img {
+.people-information > div:nth-child(2) > button {
+  background-color: transparent;
+  border: unset;
+  cursor: pointer;
+}
+
+.people-information > div:nth-child(2) > button > img {
   width: 24px;
   height: 24px;
 }
@@ -257,6 +263,10 @@
 
 .people-information > button:hover {
   opacity: 90%;
+}
+
+.span-mobile {
+  display: none;
 }
 
 @media (max-width: 682px) {
