@@ -6,7 +6,7 @@ const fetchData = async () => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    arrData.push(...data); // perbaikan penting di sini
+    arrData.push(...data); 
     handleData(arrData);
   } catch (err) {
     console.log(err);
@@ -17,7 +17,7 @@ fetchData();
 
 const handleData = (data) => {
   const container = document.querySelector(".find-people > div:nth-child(2)");
-  container.innerHTML = ""; // clear sebelum render ulang
+  container.innerHTML = ""; 
 
   data.forEach((e) => {
     const spanName = document.createElement("span");
