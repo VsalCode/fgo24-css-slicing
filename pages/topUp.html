@@ -203,7 +203,7 @@
             </span>
           </div>
 
-          <div class="dashboard-content">
+          <form class="dashboard-content">
             <div class="account-information">
               <p>Account Information</p>
               <!-- Account Information -->
@@ -224,44 +224,44 @@
                 <p>Type the amount you want to transfer and then press continue to the next steps.</p>
                 <div>
                   <img src="../src/icon/money.png" alt="Money Icon" />
-                  <input type="text" placeholder="Enter Nominal Transfer" />
+                  <input type="number" name="nominal" placeholder="Enter Nominal Transfer" autocomplete="off"/>
                 </div>
               </div>
               <div>
                 <p>Payment Method</p>
                 <p>Choose your payment method for top up account</p>
-                <div class="payment-option bri">
+                <label for="bri" class="payment-option bri">
                   <input type="radio" id="bri" name="bank" value="bri" />
                   <img src="../src/assets/BRI.png" alt="BRI Logo" />
-                  <label for="bri">Bank Rakyat Indonesia</label>
-                </div>
-                <div class="payment-option dana">
+                  <span>Bank Rakyat Indonesia</span>
+                </label>
+                <label for="dana" class="payment-option dana">
                   <input type="radio" id="dana" name="bank" value="dana" />
                   <img src="../src/assets/Dana.png" alt="Dana Logo" />
-                  <label for="dana">Dana</label>
-                </div>
-                <div class="payment-option bca">
+                  <span >Dana</span>
+                </label>
+                <label for="bca" class="payment-option bca">
                   <input type="radio" id="bca" name="bank" value="bca" />
                   <img src="../src/assets/BCA.png" alt="BCA Logo" />
-                  <label for="bca">Bank Central Asia</label>
-                </div>
-                <div class="payment-option gopay">
+                  <span>Bank Central Asia</span>
+                </label>
+                <label for="gopay" class="payment-option gopay">
                   <input type="radio" id="gopay" name="bank" value="gopay" />
                   <img src="../src/assets/Gopay.png" alt="Gopay Logo" />
-                  <label for="gopay">Gopay</label>
-                </div>
-                <div class="payment-option ovo">
+                  <span>Gopay</span>
+                </label>
+                <label for="ovo" class="payment-option ovo">
                   <input type="radio" id="ovo" name="bank" value="ovo" />
                   <img src="../src/assets/OVO.png" alt="OVO Logo" />
-                  <label for="ovo">OVO</label>
-                </div>
+                  <span>OVO</span>
+                </label>
               </div>
             </div>
             <div class="payment">
               <p>Payment</p>
               <div>
                 <span>Order</span>
-                <span>Idr. 40.000</span>
+                <span>Idr. 0</span>
               </div>
               <div>
                 <span>Delivery</span>
@@ -269,17 +269,18 @@
               </div>
               <div>
                 <span>Tax</span>
-                <span>Idr. 4.000</span>
+                <span>11%</span>
               </div>
               <hr />
               <div>
                 <span>Sub Total</span>
-                <span>Idr. 44.000</span>
+                <span>Idr. 0</span>
               </div>
               <button type="submit">Submit</button>
               <p>*Get Discount if you pay with Bank Central Asia</p>
             </div>
-          </div>
+          </form>
+
         </div>
       </div>
     </div>

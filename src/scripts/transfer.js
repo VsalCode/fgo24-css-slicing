@@ -1,4 +1,4 @@
-const url = "https://raw.githubusercontent.com/VsalCode/e-wallet-api/refs/heads/main/user-transfer.txt";
+const url = "https://raw.githubusercontent.com/VsalCode/e-wallet-api/refs/heads/main/user-transfer.json";
 
 const arrData = [];
 

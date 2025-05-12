@@ -84,7 +84,8 @@
 .find-people {
   max-width: 1061px;
   width: 100%;
-  height: 720px;
+  height: fit-content;
+  padding: 0 0 30px;
   top: 206px;
   left: 300px;
   border: 2px solid #e8e8e8;
@@ -292,9 +293,12 @@
     display: none;
   }
   
-  .find-people > div:nth-child(1) > span {
-    margin: 10px 0 20px;
+  .find-people > div:nth-child(1) > form {
+    margin: 10px 0 ;
+    max-width: 100%;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 
   .find-people > div:nth-child(1) > span > input {

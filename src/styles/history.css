@@ -36,7 +36,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  width: 1061px;
+  max-width: 1061px;
+  width: 100%;
 }
 
 .guide > span {
@@ -62,7 +63,7 @@
 .find-people {
   max-width: 1061px;
   width: 100%;
-  height: 720px;
+  height: fit-content;
   top: 206px;
   left: 300px;
   border: 2px solid #e8e8e8;
@@ -236,6 +237,16 @@
   display: inline;
 }
 
+.abu {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #272a31;
+;
+}
+
 .history-list-mobile {
   display: none;
 }
@@ -344,6 +355,7 @@
   }
 
   .find-people > div:nth-child(1) > span {
+    max-width: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;

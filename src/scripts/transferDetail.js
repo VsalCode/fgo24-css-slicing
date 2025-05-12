@@ -40,9 +40,6 @@ const form = document.querySelector(".people-information");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  const nameUser = getUsername;
-  const phone = getPhone;
-  const img = getImage;
   const nominal = e.target.nominal.value;
   // const notes = e.target.notes.value
   //   console.log(nameUser, phone, img, nominal);
@@ -68,6 +65,7 @@ form.addEventListener("submit", (e) => {
   const penerimaTransfer1 = document.querySelector(".dashboard > div:nth-child(1) > form > p:first-child > span");
   penerimaTransfer1.textContent = getUsername;
 
+  // ambil pin
   pinForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
@@ -121,6 +119,18 @@ form.addEventListener("submit", (e) => {
 
     setTimeout(() => {
       successPopUp.classList.replace("loading-off", "success-on");
+
+      const userHistory = {
+        avatar: getImage,
+        pengirim: getUsername,
+        phone: getPhone,
+        nominal: nominal,
+      };
+
+      const getDataHistory = JSON.parse(localStorage.getItem("transferHistory") || "[]");
+      getDataHistory.push(userHistory);
+      localStorage.setItem("transferHistory", JSON.stringify(getDataHistory));
+
       setTimeout(() => {
         successPopUp.classList.replace("success-on", "loading-off");
         setTimeout(() => {
