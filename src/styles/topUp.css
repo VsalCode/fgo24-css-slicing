@@ -25,6 +25,168 @@
   overflow-y: auto;
 }
 
+/* MODAL SUCCES */
+
+.success-off {
+  display: none;
+}
+
+.modal-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.modal-success > .modal-box {
+  margin-top: 17vh;
+  margin-left: 40vh;
+  width: 450px;
+  height: 500px;
+  border-radius: 16px;
+  padding: 20px;
+  gap: 10px;
+  /* width: 90%; Batasi lebar modal */
+  /* max-width: 600px; Batas maksimal lebar modal */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.modal-success > .modal-box > p:first-child {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.modal-success > .modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-success > .modal-box > div > p:nth-child(1) {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0b132a;
+}
+
+.modal-success > .modal-box > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.modal-success > .modal-box > div > img {
+  width: 270px;
+  height: 270px;
+}
+
+.modal-success > .modal-box > div > p:nth-child(2) {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.modal-success > .modal-box > div > p:nth-child(2) > span {
+  color: #1ec15f;
+}
+
+.modal-success > .modal-box > div > p:nth-child(3) {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #4f5665;
+}
+
+.modal-success > .modal-box > button:last-child {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: #2948ff;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+.modal-success > .modal-box > button:hover {
+  opacity: 90%;
+}
+
+
+
+/* LOADING */
+.loading-off {
+  display: none;
+}
+
+.success-on {
+  background-color: rgba(0, 0, 0, 0.384);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-box {
+  height: 50%;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.success-box > img {
+  width: 100px;
+  height: 100px;
+}
+
+
 /* ISI */
 
 .guide {

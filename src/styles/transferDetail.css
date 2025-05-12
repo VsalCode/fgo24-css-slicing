@@ -380,7 +380,8 @@
 }
 
 .guide > a > img {
-  width: 609px;
+  max-width: 609px;
+  width: 100%;
   height: 45px;
 }
 
