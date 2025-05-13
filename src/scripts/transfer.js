@@ -24,7 +24,6 @@ const handleData = (data) => {
     return;
   }
 
-
   data.forEach((e) => {
     const spanName = document.createElement("span");
     spanName.textContent = e.name;

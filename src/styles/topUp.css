@@ -519,6 +519,9 @@ hr {
     justify-content: center;
     color: white;
     margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 50;
   }
 
   .guide > span {
@@ -573,4 +576,48 @@ hr {
   .payment > p:first-child, .payment > div > span:nth-child(1), .payment > div > span:nth-child(2), .payment > p:last-child {
     font-size: 14px;
   }
+
+  
+  .modal-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .modal-success > .modal-box {
+    margin: 0;
+    max-width: 280px;
+    height: fit-content;
+    width: 100%;
+  }
+
+  .modal-success > .modal-box > p:first-child, .modal-success > .modal-box > div > p:nth-child(2), .modal-success > .modal-box > p:last-child  {
+    font-size: 12px;
+  }
+
+  .modal-success > .modal-box > div > p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .modal-success > .modal-box > div > img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .modal-success > .modal-box > button:nth-child(3), .modal-success > .modal-box > button:nth-child(4){
+    height: 41px;
+    font-size: 12px;
+  }
+
+  .modal-success > .modal-box > div > p:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .pin-grid > input {
+    height: 40px;
+    width: 20px;
+  }
+
 }

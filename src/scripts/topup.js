@@ -145,6 +145,4 @@ form.addEventListener("submit", (e) => {
 
     modalSuccess.classList.replace("modal-success", "success-off");
   })
-
-  // e.target.reset();
 });
