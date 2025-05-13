@@ -70,14 +70,14 @@
   padding: 0 20px;
 }
 
-.find-people > div:nth-child(1) {
+.find-people > form {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 0;
 }
 
-.find-people > div:nth-child(1) > p {
+.find-people > form > p {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 18px;
@@ -86,7 +86,7 @@
   vertical-align: middle;
 }
 
-.find-people > div:nth-child(1) > span {
+.find-people > form > span {
   max-width: 340px;
   width: 100%;
   height: 40px;
@@ -101,17 +101,22 @@
   align-items: center;
 }
 
-.find-people > div:nth-child(1) > span > input {
+.find-people > form > span > input {
   border: none;
   width: 340px;
   height: 35px;
 }
 
-.find-people > div:nth-child(1) > span > input:focus {
+.find-people > form > span > input:focus {
   outline: none;
 }
 
-.find-people > div:nth-child(1) > span > img {
+.find-people > form > span > button {
+  background-color: transparent;
+  border: none;
+}
+
+.find-people > form > span > button > img {
   width: 16px;
   height: 16px;
 }
@@ -120,10 +125,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 30px;
 }
 
 /* TABEL HISTORY */
-.find-people > div:nth-child(2) > div {
+.find-people > #history-list > tr {
   height: 72px;
   max-width: 1003px;
   width: 100%;
@@ -133,37 +139,37 @@
   padding: 0px 30px;
 }
 
-.find-people > div:nth-child(2) > div > div {
+.find-people > #history-list > tr > td {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.find-people > div:nth-child(2) > div > div:nth-child(2),
-.find-people > div:nth-child(2) > div > div:nth-child(3) {
+.find-people > #history-list > tr > td:nth-child(2),
+.find-people > #history-list > tr > td:nth-child(3) {
   max-width: 250px;
   width: 100%;
 }
 
-.find-people > div:nth-child(2) > div > div:nth-child(4) {
+.find-people > #history-list > tr > td:nth-child(4) {
   max-width: 200px;
   width: 100%;
 }
 
-.find-people > div:nth-child(2) > div:nth-child(odd) {
+.find-people > #history-list > tr:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-.find-people > div:nth-child(2) > div:nth-child(even) {
+.find-people > #history-list > tr:nth-child(even) {
   background-color: white;
 }
 
-.find-people > div:nth-child(2) > div > div > img:nth-child(1) {
+.find-people > #history-list > tr > td > img:nth-child(1) {
   width: 48px;
   height: 48px;
 }
 
-.find-people > div:nth-child(2) > div > div > button {
+.find-people > #history-list > tr > td > button {
   cursor: pointer;
   background-color: transparent;
   border: none;
@@ -261,20 +267,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 0 15px;
   }
 
-  .history-list-mobile > a {
+  .history-list-mobile > tr {
     height: 72px;
     max-width: 1003px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0 20px;
   }
 
-  .history-list-mobile > a > div:first-child > span {
+  .history-list-mobile > tr > td:first-child > span {
     font-family: Plus Jakarta Sans;
     font-weight: 400;
     font-size: 14px;
@@ -283,15 +290,18 @@
     text-decoration: none;
   }
 
-  .history-list-mobile > a > div:first-child {
+  .history-list-mobile > tr > td:first-child {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    flex: 1 ;
+    gap: 10px;
   }
 
-  .history-list-mobile > a:nth-child(odd) {
+  .history-list-mobile > tr:nth-child(odd) {
     background-color: #e8e8e8;
   }
-  .history-list-mobile > a:nth-child(even) {
+  .history-list-mobile > tr:nth-child(even) {
     background-color: white;
   }
 
@@ -337,9 +347,10 @@
   .find-people {
     margin-top: 50px;
     padding: 0;
+    border: unset;
   }
 
-  .find-people > div:nth-child(1) {
+  .find-people > form {
     padding: 0 15px;
     display: flex;
     flex-direction: column;
@@ -348,13 +359,13 @@
     width: 100%;
   }
 
-  .find-people > div:nth-child(1) > p {
+  .find-people > form > p {
     font-family: Montserrat;
     font-weight: 500;
     font-size: 14px;
   }
 
-  .find-people > div:nth-child(1) > span {
+  .find-people > form > span {
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -362,20 +373,20 @@
     margin-top: 10px;
   }
 
-  .find-people > div:nth-child(2) {
+  .find-people > #history-list > tr{ 
     padding: 20px 20px 0;
   }
 
-  .find-people > div:nth-child(2) > div > img {
+  .find-people > #history-list > tr > img {
     display: none;
   }
 
-  .find-people > div:nth-child(2) > div > button {
+  .find-people > #history-list > tr > button {
     display: none;
   }
 
-  .find-people > div:nth-child(2) > div > span:nth-child(2),
-  .find-people > div:nth-child(2) > div > span:nth-child(3) {
+  .find-people > #history-list > tr > span:nth-child(2),
+  .find-people > #history-list > tr > span:nth-child(3) {
     display: none;
   }
 
@@ -391,4 +402,5 @@
   .pages > div > img {
     display: none;
   }
-}
+};
+

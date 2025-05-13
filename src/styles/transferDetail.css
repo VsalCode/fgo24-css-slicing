@@ -379,11 +379,52 @@
   height: 24px;
 }
 
-.guide > a > img {
-  max-width: 609px;
-  width: 100%;
-  height: 45px;
+.guide > div:last-child {
+  display: flex;
+  gap: 20px;
 }
+
+.guide > div:last-child > div:nth-child(2)::before, .guide > div:last-child > div:nth-child(2)::after {
+  content: '--------';
+}
+
+.guide > div:last-child > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.guide > div:last-child > div > div {
+  background-color: #4F5665;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide > div:last-child > div > span {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  font-weight: 500;
+  color: #4F5665;
+}
+
+.guide > div:last-child > div:nth-child(2) > div{
+  background-color: #2948ff;
+  color: white;
+}
+
+.guide > div:last-child > div:nth-child(2) > span {
+  color: #2948ff;
+  font-weight: 600;
+}
+
 
 /* FIND PEOPLE */
 
@@ -845,4 +886,9 @@ input[type="number"] {
     height: 40px;
     width: 20px;
   }
+
+    .guide > div:last-child {
+    display: none;
+  }
+
 }

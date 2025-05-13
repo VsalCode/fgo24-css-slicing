@@ -5,13 +5,11 @@
   font-family: Montserrat, Helvetica, sans-serif;
 }
 
-
 .sidebar > div > a:nth-child(2) {
   background-color: #2948ff;
   color: white;
   border-radius: 6px;
 }
-
 
 /* DASHBOARD UTAMA */
 /* 
@@ -43,7 +41,6 @@
   padding-top: 20px;
 }
 
-
 /* ISI */
 
 .guide {
@@ -73,10 +70,50 @@
   height: 24px;
 }
 
-.guide >  img {
-  max-width: 609px;
-  width: 100%;
-  height: 45px;
+.guide > div:last-child {
+  display: flex;
+  gap: 20px;
+}
+
+.guide > div:last-child > div:nth-child(2)::before, .guide > div:last-child > div:nth-child(2)::after {
+  content: '--------';
+}
+
+.guide > div:last-child > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.guide > div:last-child > div > div {
+  background-color: #4F5665;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide > div:last-child > div > span {
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -0.6%;
+  font-weight: 500;
+  color: #4F5665;
+}
+
+.guide > div:last-child > div:first-child > div{
+  background-color: #2948ff;
+  color: white;
+}
+
+.guide > div:last-child > div:first-child > span {
+  color: #2948ff;
+  font-weight: 600;
 }
 
 /* FIND PEOPLE */
@@ -158,7 +195,7 @@
 }
 
 /* CONTAINER KOTAK PENCARIAN ORANG */
-.find-people > div:nth-child(2) {
+table {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -166,7 +203,8 @@
 }
 
 /* KOTAK PENCARIAN ORANG */
-.find-people > div:nth-child(2) > a {
+table > tr {
+  position: relative;
   height: 72px;
   width: 100%;
   display: flex;
@@ -183,29 +221,40 @@
   letter-spacing: 0%;
 }
 
-.find-people > div:nth-child(2) > a > span {
+table > tr > a {
+  position: absolute;
+  background-color: #2949ff54;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: transparent;
+  color: transparent;
+}
+
+table > tr > span {
   display: inline;
 }
 
-.find-people > div:nth-child(2) > a > .span-mobile {
+table > tr > .span-mobile {
   display: flex;
   flex-direction: column;
 }
 
-.find-people > div:nth-child(2) > a:nth-child(odd) {
+table > tr:nth-child(odd) {
   background-color: #e8e8e8;
 }
 
-.find-people > div:nth-child(2) > a:nth-child(even) {
+table > tr:nth-child(even) {
   background-color: white;
 }
 
-.find-people > div:nth-child(2) > a > img:nth-child(1) {
+table > tr > td > img:nth-child(1) {
   width: 48px;
   height: 48px;
 }
 
-.span-mobile, .span-mobile > span {
+.span-mobile,
+.span-mobile > span {
   display: none;
 }
 
@@ -213,8 +262,10 @@
   display: none;
 }
 
-
 @media (max-width: 830px) {
+  .guide > div:last-child {
+    display: none;
+  }
 
   nav {
     border: none;
@@ -248,11 +299,11 @@
     letter-spacing: -0.6%;
   }
 
-  .dashboard{
+  .dashboard {
     padding-top: 0;
   }
 
-  .navbar-mobile > a:nth-child(2){
+  .navbar-mobile > a:nth-child(2) {
     color: #2948ff;
     font-weight: 700;
   }
@@ -260,22 +311,22 @@
   .guide > span {
     display: none;
   }
-  
-  .guide > img {
+
+  .guide > div:nth-child(2) {
     display: none;
   }
 
   .dashboard {
     max-width: 100%;
   }
-  
+
   .find-people {
     height: fit-content;
-    padding: 0  0 70px;
+    padding: 0 0 70px;
     border: none;
     width: 100%;
   }
-  
+
   .find-people > div:nth-child(1) {
     display: flex;
     flex-direction: column;
@@ -285,16 +336,16 @@
     margin-bottom: 20px;
   }
 
-  .find-people > div:nth-child(1) > div > p:first-child{
+  .find-people > div:nth-child(1) > div > p:first-child {
     padding-bottom: 10px;
   }
 
-  .find-people > div:nth-child(1) > div > p:nth-child(2){
+  .find-people > div:nth-child(1) > div > p:nth-child(2) {
     display: none;
   }
-  
+
   .find-people > div:nth-child(1) > form {
-    margin: 10px 0 ;
+    margin: 10px 0;
     max-width: 100%;
     width: 100%;
     display: flex;
@@ -306,16 +357,17 @@
     object-fit: contain;
   }
 
-  .find-people > div:nth-child(2) {
+  table {
     width: 100%;
     padding: 0;
   }
 
-  .find-people > div:nth-child(2) > a > span {
+  table > tr > td > span {
     display: none;
   }
 
-  .span-mobile, .span-mobile > span  {
+  .span-mobile,
+  .span-mobile > span {
     display: block;
     font-size: 12px;
   }

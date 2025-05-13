@@ -64,7 +64,7 @@ button:hover {
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
-  padding: 3vh 20px;
+  padding: 3vh 20px 0 20px;
   background-color: #2948ff;
 }
 
@@ -723,11 +723,33 @@ button:hover {
   display: none;
 }
 
-@media (max-width: 500px){
+@media (max-width: 1020px){
+  .title > p{
+    font-size: 45px;
+  }
+
+  .footer-grid > div:nth-child(1) > div > img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-grid > div:nth-child(1) > div > span {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 500px){
+  .title{
+    text-align: center;
+  }
+}
+
+@media (max-width: 552px){
   .title{
     text-align: start;
   }
 }
+
 
 @media (max-width: 933px) {
   .wrapper, .container{
@@ -815,10 +837,6 @@ button:hover {
   .container {
     height: fit-content;
     padding: 0 20px;
-  }
-
-  .title {
-    text-align: center;
   }
 
   .title > p {
@@ -961,7 +979,15 @@ button:hover {
   .trusted-partners {
     height: fit-content;
     padding: 30px 20px;
-    margin: 30px 0;
+    margin: 30px 0 ;
+    width: 100%;
+  }
+
+  .trusted-partners > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .trusted-partners > div:nth-child(2) > p:nth-child(1) {
@@ -1024,12 +1050,14 @@ button:hover {
 
   /* --------------------- Testimoni ------------------------- */
 
-  .testimoni > button {
+
+  .testimoni button {
     display: none;
   }
 
   .box {
     width: 100%;
+    margin: 0;
     height: auto;
     padding: 30px 15px;
   }

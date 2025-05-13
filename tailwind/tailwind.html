@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.9.0/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div id="container" class="h-screen">
+      <nav id="navbar" class="h-[76px] flex justify-between px-[70px] sticky top-0 bg-white-700 border">
+        <div class="flex items-center gap-3"><img class="w-10 h-10" src="/src/assets/logo.png" alt="" /><span class="text-2xl">E-Wallet</span></div>
+        <div class="flex items-center gap-7">
+          <p class="">Ghaluh Wizard</p>
+          <img class="w-12 h-12 rounded-3xl" src="/src/users/wizard.png" alt="" />
+          <i data-lucide="chevron-down"></i>
+        </div>
+      </nav>
+      <section class="flex h-[948px] z-10">
+        <aside id="sidebar" class="h-[948px] w-[262px] z-100 shadow border">
+          <div class="p-9 flex flex-col gap-5">
+            <a href="#" class="flex gap-3 p-4 bg-blue-700 text-white rounded">
+              <i data-lucide="home"></i>
+              <span>Dashboard</span>
+            </a>
+            <a href="#" class="flex gap-3 p-4">
+              <i data-lucide="send"></i>
+              <span>Transfer</span>
+            </a>
+            <a href="#" class="flex gap-3 p-4">
+              <i data-lucide="history"></i>
+              <span>History</span>
+            </a>
+            <a href="#" class="flex gap-3 p-4">
+              <i data-lucide="banknote-arrow-up"></i>
+              <span>Topup</span>
+            </a>
+            <a href="#" class="flex gap-3 p-4">
+              <i data-lucide="user-pen"></i>
+              <span>Edit Profile</span>
+            </a>
+            <a href="#" class="flex gap-3 p-4">
+              <i data-lucide="log-out"></i>
+              <span>Keluar</span>
+            </a>
+          </div>
+        </aside>
+        <div id="dashboard" class="flex justify-center gap-5 p-5">
+          <div class="w-[700px] h-fit flex flex-col gap-3">
+            <div class="w-full h-[147px] flex justify-between">
+              <div class="w-[222px] h-full border flex flex-col justify-center ps-7 gap-3">
+                <div class="flex gap-2">
+                  <i class="text-blue-700" data-lucide="banknote-arrow-up"></i>
+                  <p>Balance</p>
+                </div>
+                <p class="font-bold text-2xl">Rp.200.000</p>
+                <p>+2% 3 Days Ago</p>
+              </div>
+              <div class="w-[222px] h-full border flex flex-col justify-center ps-7 gap-3">
+                <div class="flex gap-2">
+                  <i class="text-blue-700" data-lucide="banknote-arrow-up"></i>
+                  <p>Income</p>
+                </div>
+                <p class="font-bold text-2xl">Rp.200.000</p>
+                <p>+2% 3 Days Ago</p>
+              </div>
+              <div class="w-[222px] h-full border flex flex-col justify-center ps-7 gap-3">
+                <div class="flex gap-2">
+                  <i class="text-blue-700" data-lucide="banknote-arrow-up"></i>
+                  <p>Expense</p>
+                </div>
+                <p class="font-bold text-2xl">Rp.200.000</p>
+                <p>-2%</p>
+              </div>
+            </div>
+            <div class="w-full border h-[81px] flex justify-between items-center px-5">
+              <span class="font-bold">Fast Service</span>
+              <div class="flex gap-5">
+                <button class="w-[116px] h-[45px] bg-blue-700 rounded-xl text-white flex items-center justify-center gap-3"><i data-lucide="banknote-arrow-up "></i>Topup</button>
+                <button class="w-[116px] h-[45px] bg-blue-700 rounded-xl text-white flex items-center justify-center gap-3"><i data-lucide="send"></i>Transfer</button>
+              </div>
+            </div>
+            <div class="w-full border h-fit p-5 flex flex-col justify-between">
+              <div class="flex justify-between">
+                <span class="font-bold">Income Chart</span>
+                <div class="flex gap-5">
+                  <button class="flex items-center justify-center gap-2 bg-[#F1F1F1] h-[35px] w-[113px] shadow rounded-xl">7 days<i data-lucide="chevron-down"></i></button>
+                  <button class="flex items-center justify-center gap-2 bg-[#F1F1F1] h-[35px] w-[113px] shadow rounded-xl">income<i data-lucide="chevron-down"></i></button>
+                </div>
+              </div>
+              <canvas id="myChart" class="h-[10vh]"></canvas>
+            </div>
+          </div>
+          <div id="transaction-history" class="w-[341px] h-[843px] border flex flex-col">
+            <div class="flex justify-between px-5 py-3">
+              <p>Transaction History</p>
+              <p>See All</p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      lucide.createIcons();
+      const ctx = document.getElementById("myChart");
+
+      new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+          datasets: [
+            {
+              label: "# of Votes",
+              data: [12, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      $().ready(async () => {
+        // data.data
+        const { data } = await axios.get('https://jsonplaceholder.typicode.com/users')
+        // console.log(data);
+        data.forEach(item => {
+          $('#transaction-history').append(`
+          <div class="flex justify-between px-5 my-2 items-center">
+              <div class="flex gap-4 items-center">
+                <img class="w-15 h-15" src="/src/users/reiva.png" alt="" />
+                <div>
+                  <p>${item.name}</p>
+                  <p>transfer</p>
+                </div>
+              </div>
+              <p>Rp.50.000</p>
+            </div>
+          `)  
+        });
+
+    })
+    </script>
+  </body>
+</html>

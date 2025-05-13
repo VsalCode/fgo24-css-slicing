@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../src/styles/dashboard.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
       rel="stylesheet"
@@ -248,7 +250,7 @@
                 </span>
               </div>
               <div>
-                <img src="../src/assets/chart.png" alt="" />
+                <canvas id="myChart"></canvas>
               </div>
             </div>
           </div>
@@ -256,100 +258,12 @@
           <div class="transaction">
             <div>
               <p>Transaction History</p>
-              <p>See All</p>
+              <a href="/pages/history.html">See All</a>
             </div>
             <div class="users">
-              <div>
-                <div>
-                  <img src="../src/users/robert-fox.png" alt="" />
-                  <div>
-                    <p>Robert Fox</p>
-                    <p>Transfer</p>
-                  </div>
-                </div>
-                <p class="transfer">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/Floyd Miles.png" alt="" />
-                  <div>
-                    <p>Floyd Miles</p>
-                    <p>send</p>
-                  </div>
-                </div>
-                <p class="send">-Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/ujang.png" alt="" />
-                  <div>
-                    <p>ujang</p>
-                    <p>send</p>
-                  </div>
-                </div>
-                <p class="send">-Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/raulemons.png" alt="" />
-                  <div>
-                    <p>Raulemons</p>
-                    <p>Transfer</p>
-                  </div>
-                </div>
-                <p class="transfer">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/reiva.png" alt="" />
-                  <div>
-                    <p>Reiva</p>
-                    <p>Transfer</p>
-                  </div>
-                </div>
-                <p class="transfer">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/thobie.png" alt="" />
-                  <div>
-                    <p>Thobie</p>
-                    <p>send</p>
-                  </div>
-                </div>
-                <p class="send">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/buzjany.png" alt="" />
-                  <div>
-                    <p>buzjany</p>
-                    <p>Transfer</p>
-                  </div>
-                </div>
-                <p class="transfer">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/adisurya.png" alt="" />
-                  <div>
-                    <p>Adi Surya</p>
-                    <p>send</p>
-                  </div>
-                </div>
-                <p class="send">+Rp.50.000</p>
-              </div>
-              <div>
-                <div>
-                  <img src="../src/users/miguelle.png" alt="" />
-                  <div>
-                    <p>Miguelle</p>
-                    <p>Transfer</p>
-                  </div>
-                </div>
-                <p class="transfer">+Rp.50.000</p>
-              </div>
+                <!-- HISTORY TRANSFER -->
             </div>
+
           </div>
         </div>
       </div>

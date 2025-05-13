@@ -16,27 +16,41 @@ const fetchData = async () => {
 fetchData();
 
 const handleData = (data) => {
-  const container = document.querySelector(".find-people > div:nth-child(2)");
+  const container = document.querySelector("table");
   container.innerHTML = ""; 
+
+  if (data.length === 0) {
+    container.innerHTML = "<tr><td colspan='5'>People Not Found</td></tr>";
+    return;
+  }
+
 
   data.forEach((e) => {
     const spanName = document.createElement("span");
     spanName.textContent = e.name;
+    const tdSpanName = document.createElement('td')
+    tdSpanName.prepend(spanName)
 
     const spanPhone = document.createElement("span");
     spanPhone.textContent = e.phoneNumber;
+    const tdSpanPhone = document.createElement('td')
+    tdSpanPhone.prepend(spanPhone)
 
     const img = document.createElement("img");
     img.setAttribute("src", e.photo);
+    const tdImg = document.createElement('td')
+    tdImg.prepend(img)
 
     const starBtn = document.createElement("button");
     const star = document.createElement("img");
     star.setAttribute("src", "/src/icon/star.svg");
     starBtn.append(star);
     starBtn.setAttribute("class", "btn-star");
+    const tdButton = document.createElement('td')
+    tdButton.prepend(starBtn)
 
-    const a = document.createElement("a");
-    const div = document.createElement("div");
+    const tr = document.createElement("tr");
+    const div = document.createElement("td");
     div.setAttribute("class", "span-mobile");
     const spanMobile1 = document.createElement("span");
     const spanMobile2 = document.createElement("span");
@@ -44,19 +58,23 @@ const handleData = (data) => {
     spanMobile2.textContent = e.phoneNumber;
     div.append(spanMobile1, spanMobile2);
 
-    a.append(img, );
-    a.append(spanName, );
-    a.append(div);
-    a.append(spanPhone);
-    a.append(starBtn);
+    const a = document.createElement('a')
+    a.textContent = 'halo'
 
+    
+    tr.append(tdImg);
+    tr.append(tdSpanName);
+    tr.append(div);
+    tr.append(tdSpanPhone);
+    tr.append(tdButton);
+    tr.append(a);
 
     const imgEncode = window.btoa(e.photo);
     const phoneEncode = window.btoa(e.phoneNumber);
     const favorite = false;
 
     a.href = `/pages/transferDetail.html?name=${e.name}&phone=${phoneEncode}&img=${imgEncode}&status=${favorite}`;
-    container.append(a);
+    container.append(tr);
   });
 
   const totalFoundPeople = document.querySelector(".find-people > div:nth-child(1) > div > p:nth-child(2) > .span-jumlah");

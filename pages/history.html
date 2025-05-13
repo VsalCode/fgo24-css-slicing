@@ -194,86 +194,26 @@
             </span>
           </div>
           <div class="find-people">
-            <div>
+            <form>
               <p>Find Transaction</p>
               <span>
-                <input type="text" placeholder="Enter Number Or Full Name" />
-                <img src="../src/icon/search.png" alt="" />
+                <input type="text" name="keyword" placeholder="Enter Number Or Full Name" />
+                <button type="submit">
+                  <img src="../src/icon/search.png" alt="" />
+                </button>
               </span>
-            </div>
+            </form>
 
             
-            <div class="history-list">
-              
-            </div>
+            <table id="history-list" class="history-list">
+              <!-- TABEL DEKSTOP -->
+            </table>
             
-            <div class="history-list-mobile">
-              <a href="./historyPopupMobile.html">
-                <div>
-                  <span>Ghaluh 1</span>
-                  <span>082116304337</span>
-                </div>
-                <div>
-                  <span class="green">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Cameron William</span>
-                  <span>(308) 555-0121</span>
-                </div>
-                <div>
-                  <span class="red">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Cody Fisher</span>
-                  <span>(704) 555-0127</span>
-                </div>
-                <div>
-                  <span class="green">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Kristin Watson</span>
-                  <span>(603) 555-0123</span>
-                </div>
-                <div>
-                  <span class="red">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Floyd Miles</span>
-                  <span>082116304337</span>
-                </div>
-                <div>
-                  <span class="green">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Wade Warren</span>
-                  <span>(225) 555-0118</span>
-                </div>
-                <div>
-                  <span class="red">Rp.50.000</span>
-                </div>
-              </a>
-              <a>
-                <div>
-                  <span>Buzjany</span>
-                  <span>(239) 555-0108</span>
-                </div>
-                <div>
-                  <span class="red">Rp.50.000</span>
-                </div>
-              </a>
-            </div>
+            <table id="history-list-mobile" class="history-list-mobile">
+              <!-- TABEL MOBILE -->
+            </table>
 
-            <div class="pages">
+            <!-- <div class="pages">
               <div>
                 <span>Show <span class="jumlah-tampil"></span> History of <span class="keseluruhan"></span> History</span>
                 <span>
@@ -291,6 +231,7 @@
                 </span>
               </div>
             </div>
+             -->
           </div>
         </div>
       </div>
