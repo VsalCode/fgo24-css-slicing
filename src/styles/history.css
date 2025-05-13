@@ -257,6 +257,11 @@
   display: none;
 }
 
+.modal, .modal-box {
+  display: none;
+}
+
+
 @media (max-width: 830px) {
   /* HISTORY */
   .history-list {
@@ -269,10 +274,23 @@
     align-items: center;
     justify-content: center;
     padding: 0 15px;
+    position: relative;
+  }
+
+  .history-list-mobile > tr > a {
+    position: absolute ;
+    background-color: #1ec15f81;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
   }
 
   .history-list-mobile > tr {
     height: 72px;
+    position: relative;
     max-width: 1003px;
     width: 100%;
     display: flex;
@@ -329,6 +347,7 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
+    z-index: 90;
   }
 
   .guide > span {
@@ -401,6 +420,103 @@
 
   .pages > div > img {
     display: none;
+  }
+
+  .modal-off {
+    display: none;
+  }
+
+  .modal {
+    background-color: rgba(0, 0, 0, 0.808) ;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+  }
+
+  .modal-box {
+    /* margin-top: 3rem; */
+    border-radius: 24px;
+    z-index: 70;
+    background-color: white;
+    height: fit-content;
+    max-width: 332px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 20px;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-box > p {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 100%;
+    color: #4f5665;
+  }
+
+  .modal-box > div:nth-child(2) > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+  }
+
+  .modal-box > div > p:first-child {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .modal-box > div > p:last-child {
+    font-family: Plus Jakarta Sans;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .modal-box > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-box > div > button {
+    width: 100%;
+    max-width: 290px;
+    font-size: 12px;
+    height: 29px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .modal-box > div > button:hover {
+    opacity: 90%;
+  }
+
+  .modal-box > div > button:first-child {
+    background-color: white;
+    border: 1px solid #d00000;
+    
+  }
+  .modal-box > div > button:last-child {
+    background-color: #2948ff;
+    color: white;
+    text-decoration: none;
+    border: none
   }
 };
 

@@ -85,9 +85,9 @@ const getTransferHistory = JSON.parse(window.localStorage.getItem("transferHisto
 
 const transferHistory = (data) => {
   const historyList = document.getElementById("history-list");
-  const listMobile = document.getElementById('history-list-mobile')
-  historyList.innerHTML = ""; 
-  listMobile.innerHTML = ""
+  const listMobile = document.getElementById("history-list-mobile");
+  historyList.innerHTML = "";
+  listMobile.innerHTML = "";
 
   if (data.length === 0) {
     historyList.innerHTML = "<tr><td colspan='5'>Tidak ada riwayat ditemukan.</td></tr>";
@@ -117,7 +117,7 @@ const transferHistory = (data) => {
     span3.textContent = `Rp.${nominalTf}`;
 
     const wrapper = document.createElement("tr");
-    
+
     const div1 = document.createElement("td");
     div1.append(eImg);
 
@@ -140,10 +140,10 @@ const transferHistory = (data) => {
 
     wrapper.append(div1, div2, div3, div4, div5);
     historyList.prepend(wrapper);
-  
+
     const wrapperMobile = document.createElement("tr");
-    const tdMobile1 = document.createElement('td')
-    const tdMobile2 = document.createElement('td')
+    const tdMobile1 = document.createElement("td");
+    const tdMobile2 = document.createElement("td");
 
     const spanMobile1 = document.createElement("span");
     spanMobile1.textContent = username;
@@ -155,13 +155,40 @@ const transferHistory = (data) => {
 
     const spanMobile3 = document.createElement("span");
     spanMobile3.setAttribute("class", "red");
-    spanMobile3.textContent = `Rp.${nominalTf}`;
+    spanMobile3.textContent = `Rp.${nominalTf.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
 
+    const a = document.createElement("a");
+    a.textContent = "halo";
 
-    tdMobile1.prepend(spanMobile1, spanMobile2)
-    tdMobile2.prepend(spanMobile3)
-    wrapperMobile.prepend(tdMobile1, tdMobile2)
-    listMobile.prepend(wrapperMobile)
+    a.addEventListener("click", (e) => {
+      e.preventDefault();
+      const popup = document.querySelector(".dashboard > div:first-child");
+      popup.classList.replace("modal-off", "modal");
+      const popupImg = document.getElementById("img-history");
+      const popupNama = document.getElementById("nama-history");
+      const popupPhone = document.getElementById("status-history");
+      const popupStatus = document.getElementById("status-history");
+      const popupNominal = document.getElementById("nominal-history");
+      popupImg.setAttribute("src", img);
+      popupNama.textContent = username;
+      popupPhone.textContent = phone;
+      popupStatus.textContent = "Transfer Success";
+      popupNominal.textContent = `Rp.${nominalTf.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}`;
+    });
+
+    tdMobile1.prepend(spanMobile1, spanMobile2);
+    tdMobile2.prepend(spanMobile3);
+    wrapperMobile.prepend(tdMobile1, tdMobile2, a);
+    listMobile.prepend(wrapperMobile);
+
+    //  delete history mobile
+    const popup = document.querySelector(".dashboard > div:first-child");
+    const deleteMobile = document.getElementById("delete");
+    deleteMobile.addEventListener("click", (e) => {
+      e.preventDefault();
+      listMobile.removeChild(wrapper);
+    popup.classList.replace("modal", "modal-off");    
+    });
 
     deleteBtn.addEventListener("click", (e) => {
       e.preventDefault();
@@ -170,8 +197,16 @@ const transferHistory = (data) => {
   });
 };
 
-const searchForm = document.querySelector(".find-people > form");
+// back popup
+const popup = document.querySelector(".dashboard > div:first-child");
+const btnBack = document.getElementById("back");
+btnBack.addEventListener("click", (e) => {
+  e.preventDefault();
+  popup.classList.replace("modal", "modal-off");
+});
 
+// search
+const searchForm = document.querySelector(".find-people > form");
 transferHistory(getTransferHistory);
 
 searchForm.addEventListener("submit", (e) => {
@@ -183,10 +218,7 @@ searchForm.addEventListener("submit", (e) => {
     transferHistory(getTransferHistory);
   } else {
     const filtered = getTransferHistory.filter((item) => {
-      return (
-        item.pengirim.toLowerCase().includes(searchKeyword) ||
-        item.phone.toLowerCase().includes(searchKeyword)
-      );
+      return item.pengirim.toLowerCase().includes(searchKeyword) || item.phone.toLowerCase().includes(searchKeyword);
     });
 
     transferHistory(filtered);

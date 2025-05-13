@@ -16,13 +16,13 @@
   <body>
     <div class="container">
       <nav>
-        <span class="logo">
+        <div class="logo">
           <img src="../src/assets/logo.png" alt="" />
           <p>E-Wallet</p>
-        </span>
-        <span>
+        </div>
+        <div>
           <span>Ghaluh Wizard</span>
-          <img src="../src/icon/user-dashboard.png" alt="" />
+          <img src="../src/icon/user-default.png" alt="" />
           <button class="dropdown">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M18.5 9L12.5 15L6.5 9" stroke="#4F5665" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -43,7 +43,7 @@
                 <span>Keluar</span></div>
             </div>
           </button>
-        </span>
+        </div>
       </nav>
       <div class="navbar-mobile">
         <a href="./dashboard.html">
@@ -197,21 +197,24 @@
           <div class="change-password">
             <p>Change Pin 👋</p>
             <p>Please save your pin because this so important.</p>
-            <form>
+            <form id="pin-form">
               <div>
-                <input type="number" />
-                <input type="number" />
-                <input type="number" />
-                <input type="number" />
-                <input type="number" />
-                <input type="number" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
+                <input type="text" maxlength="1" />
               </div>
-              <button>Submit</button>
+              <button type="submit">Submit</button>
+              <p class="error-off">⚠ Pin Anda Salah! ⚠</p>
             </form>
           </div>
 
         </div>
       </div>
     </div>
+    <script src="/src/scripts/navbar.js"></script>
+    <script src="/src/scripts/changePin.js"></script>
   </body>
 </html>

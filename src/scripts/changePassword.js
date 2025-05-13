@@ -12,18 +12,15 @@ form.addEventListener("submit", (e) => {
 
   const error = document.querySelector("form > p:last-child");
 
-  // Reset error
   error.classList.replace("error-message", "error-off");
   error.textContent = "";
 
-  // Validasi kosong
   if (!currentPassword || !newPassword || !confirmPassword) {
     error.classList.replace("error-off", "error-message");
     error.textContent = "Semua input harus diisi!";
     return;
   }
 
-  // Password lama salah
   if (currentPassword !== localPassword) {
     error.classList.replace("error-off", "error-message");
     error.textContent = "Password lama salah!";
